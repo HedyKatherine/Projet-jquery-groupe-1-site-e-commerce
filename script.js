@@ -1,11 +1,20 @@
 $(document).ready(function(){
-    //Dès qu'on clique sur #b1, on applique hide() au texte
+    //pour afficher .collierMiLong
     $("#categorie1").click(function(){
-        $(".bouclesOreilles, .tourDeCou").toggle();
+        $(".bouclesOreilles, .tourDeCou, .dragon").toggle();
     });
-
-//var img = document.createElement(src="images/_DSC0001.JPG");
-
+//pour afficher .pendentif
+$("#categorie2").click(function(){
+    $(".bouclesOreilles,.tourDeCou, .collierMiLong").toggle();
+});
+//pour afficher .tourDeCou
+$("#categorie3").click(function(){
+    $(".bouclesOreilles, .dragon, .collierMiLong").toggle();
+});
+//pour afficher .bouclesOreilles
+$("#categorie4").click(function(){
+    $(".tourDeCou, .dragon, .collierMiLong").toggle();
+});
 
 
 /*
