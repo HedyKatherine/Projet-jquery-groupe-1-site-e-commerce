@@ -4,35 +4,31 @@
     <meta charset="utf-8">
     <title>accueil</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">-->
+
+    <link rel="stylesheet" href="bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
     <body>
       <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="images/logo.jpeg"alt="logo"></img></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-              <div class="collapse navbar-collapse" id="navbarColor03">
-                <ul class="navbar-nav me-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Accueil</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="product.html">Produits</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                </ul>
-                        <!--
-                        <form class="d-flex">
-                            <input class="form-control me-sm-2" type="text" placeholder="Search">
-                            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                        </form> !-->
-              </div>
-          </div>
-        </nav>
+        <nav class="navbar navbar-expand-sm">
+                <a class="navbar-brand" href="#"><img src="images/logo.jpeg"alt="logo" class="logo"></a><button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
           <div class="d-flex justify-content-end">
             <a href="basket.html"><img src="images/panier.png"alt="panier"style="width:30%; height:auto"</img></a>
       </header>
@@ -45,31 +41,22 @@
         </div>
         <div class="caroussel d-flex justify-content-center">
         <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
-          <!-- Indicateurs -->
-         <!--<ul class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-               <li data-target="#demo" data-slide-to="1"></li>
-               <li data-target="#demo" data-slide-to="2"></li>
-               <li data-target="#demo" data-slide-to="3"></li>
-               <li data-target="#demo" data-slide-to="4"></li>
-               <li data-target="#demo" data-slide-to="5"></li>
-             </ul>-->
-             <!-- Carrousel -->
+         <!-- Carrousel -->
              <div class="carousel-inner" style="width:300px; height:400px">
-               <div class="carousel-item active" data-interval="2000">
-                 <img src="images/caroussel1.jpg" alt="Carrousel slide 1" class="d-block "style="width:300px; height:400px">
+               <div class="carousel-item active" data-interval="4500">
+                 <img src="images/caroussel1.jpg" alt="Carrousel slide 1" class="d-block imageCarousel"style="width:300px; height:400px">
                </div>
-               <div class="carousel-item" data-interval="2000">
-                 <img src="images/caroussel2.jpg" alt="Carrousel slide 2" class="d-block "style="width:300px; height:400px">
+               <div class="carousel-item" data-interval="4500">
+                 <img src="images/caroussel2.jpg" alt="Carrousel slide 2" class="d-block imageCarousel"style="width:300px; height:400px">
                </div>
-               <div class="carousel-item" data-interval="2000">
-                 <img src="images/caroussel3.jpg" alt="Carrousel slide 3" class="d-block "style="width:300px; height:400px">
+               <div class="carousel-item" data-interval="4500">
+                 <img src="images/caroussel3.jpg" alt="Carrousel slide 3" class="d-block imageCarousel"style="width:300px; height:400px">
                </div>
-               <div class="carousel-item" data-interval="2000">
-                 <img src="images/caroussel4.jpg" alt="Carrousel slide 3" class="d-block "style="width:300px; height:400px">
+               <div class="carousel-item" data-interval="4500">
+                 <img src="images/caroussel4.jpg" alt="Carrousel slide 3" class="d-block imageCarousel"style="width:300px; height:400px">
                </div>
-               <div class="carousel-item" data-interval="2000">
-                 <img src="images/caroussel5.jpg" alt="Carrousel slide 3" class="d-block "style="width:300px; height:400px">
+               <div class="carousel-item" data-interval="4500">
+                 <img src="images/caroussel5.jpg" alt="Carrousel slide 3" class="d-block imageCarousel"style="width:300px; height:400px">
                </div>
              </div>
 
