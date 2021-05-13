@@ -16,8 +16,4 @@ $(document).ready(function(){
     $("#categorie4").click(function(){
       $(".tourDeCou, .dragon, .collierMiLong").toggle();
     });
-
-
-
-
 });

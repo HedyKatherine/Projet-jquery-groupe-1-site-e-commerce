@@ -1,10 +1,4 @@
-img
-{
-  width: 200px;
-  height: 200px;
-}
-
-
+///////page index//////
 .carousel
 {
   border: solid;
@@ -13,20 +7,22 @@ img
   border-radius: 2%;
   box-shadow: 6px 6px 12px grey;
 }
-
-
-body, .card
-{
-background-color: #EDF2FB;
-}
-
 .navbar
 {
 background-color: #CCDBFD;
 }
-
 .logo
 {
   width: 110px;
   height:80px;
+}
+////////// page product///////
+img
+{
+  width: 200px;
+  height: 200px;
+}
+body, .card
+{
+background-color: #EDF2FB;
 }
