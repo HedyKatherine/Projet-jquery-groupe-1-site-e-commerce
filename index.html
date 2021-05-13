@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <title>accueil</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
+  </head>
     <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">Bijoux</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-                    <div class="collapse navbar-collapse" id="navbarColor03">
-                        <ul class="navbar-nav me-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Home
-            <span class="visually-hidden">(current)</span>
-          </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/index.html">Accueil</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/product.html">Produits</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/contact.html">Contact</a>
-                            </li>
-                        </ul>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.jpeg"alt="logo"></img></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="product.html">Produits</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
                         <!--
                         <form class="d-flex">
                             <input class="form-control me-sm-2" type="text" placeholder="Search">
                             <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                         </form> !-->
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main class="container">
-           <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
-             <!-- Indicateurs -->
-             <ul class="carousel-indicators">
-               <li data-target="#demo" data-slide-to="0" class="active"></li>
+              </div>
+          </div>
+        </nav>
+          <div class="d-flex justify-content-end">
+            <a href="basket.html"><img src="images/panier.png"alt="panier"style="width:30%; height:auto"</img></a>
+      </header>
+      <main class="container">
+        <div class="row">
+          <div class="col">
+            <p>Vanta’s costumes vous propose des bijoux originaux aux inspirations fantastiques, baroques et féeriques en cristal de Bohème.</p>
+            <p>Pour vous, vous offrir, pour tous les jours ou pour une occasion particulière, vous trouverez votre bonheur à coup sûr… </p>
+          </div>
+        </div>
+        <div class="caroussel d-flex justify-content-center">
+        <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
+          <!-- Indicateurs -->
+         <!--<ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
                <li data-target="#demo" data-slide-to="1"></li>
                <li data-target="#demo" data-slide-to="2"></li>
-             </ul>
-
+               <li data-target="#demo" data-slide-to="3"></li>
+               <li data-target="#demo" data-slide-to="4"></li>
+               <li data-target="#demo" data-slide-to="5"></li>
+             </ul>-->
              <!-- Carrousel -->
-             <div class="carousel-inner">
+             <div class="carousel-inner" style="width:300px; height:400px">
                <div class="carousel-item active" data-interval="2000">
-                 <img src="/home/sophie/projet/exercices/jquerry/projetGroupe/images/image1_2.jpg" alt="Carrousel slide 1" class="d-block w-100">
+                 <img src="images/caroussel1.jpg" alt="Carrousel slide 1" class="d-block "style="width:300px; height:400px">
                </div>
                <div class="carousel-item" data-interval="2000">
-                 <img src="https://www.pierre-giraud.com/bootstrap-carrousel-slide-2.jpg" alt="Carrousel slide 2" class="d-block w-100">
+                 <img src="images/caroussel2.jpg" alt="Carrousel slide 2" class="d-block "style="width:300px; height:400px">
                </div>
                <div class="carousel-item" data-interval="2000">
-                 <img src="https://www.pierre-giraud.com/bootstrap-carrousel-slide-3.jpg" alt="Carrousel slide 3" class="d-block w-100">
+                 <img src="images/caroussel3.jpg" alt="Carrousel slide 3" class="d-block "style="width:300px; height:400px">
+               </div>
+               <div class="carousel-item" data-interval="2000">
+                 <img src="images/caroussel4.jpg" alt="Carrousel slide 3" class="d-block "style="width:300px; height:400px">
+               </div>
+               <div class="carousel-item" data-interval="2000">
+                 <img src="images/caroussel5.jpg" alt="Carrousel slide 3" class="d-block "style="width:300px; height:400px">
                </div>
              </div>
 
@@ -75,16 +83,22 @@
                <span class="sr-only">Suivant</span>
              </a>
            </div>
-         </main>
-
-
-        <footer>
-        </footer>
-
+         </div>
+      </main>
+      <footer>
+        <div class="row">
+          <div class="col">
+            <a href="https://www.instagram.com/vantascostumes/?hl=fr"target="_blank"><img src="images/128x128instagram.png" alt="LogoInstagram"style="width:5%; height:auto"</img></a>
+            <a href="https://www.facebook.com/Vantacostumes"target="_blank"><img src="images/128x128facebook.png" alt="LogoFacebook"style="width:5%; height:auto"</img></a>
+          </div>
+        </div>
+        <div>
+          <p class="copyright">&copy K.Burgain, A.Martina, E.Molina, S.Vesin</p>
+        </div>
+      </footer>
         <!-- les scripts -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
         <script src="main.js"></script>
     </body>
-
 </html>
