@@ -1,4 +1,8 @@
-///////page index//////
+body, .card
+{
+background-color: #EDF2FB;
+}
+
 .carousel
 {
   border: solid;
@@ -22,7 +26,30 @@ img
   width: 200px;
   height: 200px;
 }
-body, .card
+.collierMiLong, .dragon, .tourDeCou, .bouclesOreilles
 {
-background-color: #EDF2FB;
+  display: none;
+}
+
+.text
+{
+  background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 30%;
+    width: 20%;
+}
+/*.text:hover
+{
+  transform: scale(1.3);
+}*/
+.imageProduit
+{
+  width: 300px;
+  height: 300px;
 }

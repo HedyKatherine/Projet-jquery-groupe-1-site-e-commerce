@@ -1,19 +1,28 @@
-// script
 $(document).ready(function(){
-//pour afficher .collierMiLong
+    //pour afficher colliers mi-longs
     $("#categorie1").click(function(){
-        $(".bouclesOreilles, .tourDeCou, .dragon").toggle();
+        $(".collierMiLong").toggle();
+        $(".imageProduit").css("width","50px");
+        $(".imageProduit").css("height","50px");
+
+        //$(".text").css("color","black");
+        //$(".text").css("background","#EDF2FB");
     });
-//pour afficher .pendentif
     $("#categorie2").click(function(){
-      $(".bouclesOreilles,.tourDeCou, .collierMiLong").toggle();
+        $(".dragon").toggle();
+        $(".imageProduit").css("width","50px");
+        $(".imageProduit").css("height","50px");
     });
-//pour afficher .tourDeCou
     $("#categorie3").click(function(){
-      $(".bouclesOreilles, .dragon, .collierMiLong").toggle();
+        $(".tourDeCou").toggle();
+        $(".imageProduit").css("width","50px");
+        $(".imageProduit").css("height","50px");
     });
-//pour afficher .bouclesOreilles
     $("#categorie4").click(function(){
-      $(".tourDeCou, .dragon, .collierMiLong").toggle();
+        $(".bouclesOreilles").toggle();
+        $(".imageProduit").css("width","50px");
+        $(".imageProduit").css("height","50px");
     });
+
+
 });
