@@ -4,6 +4,7 @@ $(document).ready(function(){
         $(".collierMiLong").toggle();
         $(".imageProduit").css("width","50px");
         $(".imageProduit").css("height","50px");
+        $(".boutons").css("margin-top","15px");
 
         //$(".text").css("color","black");
         //$(".text").css("background","#EDF2FB");
@@ -12,17 +13,23 @@ $(document).ready(function(){
         $(".dragon").toggle();
         $(".imageProduit").css("width","50px");
         $(".imageProduit").css("height","50px");
+          $(".boutons").css("margin-top","15px");
     });
     $("#categorie3").click(function(){
         $(".tourDeCou").toggle();
         $(".imageProduit").css("width","50px");
         $(".imageProduit").css("height","50px");
+          $(".boutons").css("margin-top","15px");
     });
     $("#categorie4").click(function(){
         $(".bouclesOreilles").toggle();
         $(".imageProduit").css("width","50px");
         $(".imageProduit").css("height","50px");
+          $(".boutons").css("margin-top","15px");
     });
+
+  
+
 
 
 });
