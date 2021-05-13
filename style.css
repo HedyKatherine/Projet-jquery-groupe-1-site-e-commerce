@@ -11,7 +11,7 @@ img {
   box-shadow: 6px 6px 12px grey;
 }
 
-body {
+body, .card {
   background-color: #EDF2FB;
 }
 
