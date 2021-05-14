@@ -19,6 +19,11 @@ body, .card {
   height: 80px;
 }
 
+.card {
+  width: 800px;
+  height: 650px;
+}
+
 .boutons {
   display: flex;
   justify-content: space-around;
@@ -61,6 +66,13 @@ img {
 .collierMiLong, .bouclesOreilles, .tourDeCou, .sautoir {
   width: 800px;
   height: 650px;
+}
+
+@media screen and (max-width: 767px) {
+  .collierMiLong, .bouclesOreilles, .tourDeCou, .sautoir {
+    width: 500px;
+    height: 500px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

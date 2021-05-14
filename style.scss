@@ -75,3 +75,9 @@ img
   width: 800px;
   height: 650px;
 }
+@media screen and (max-width: 767px)
+{.collierMiLong, .bouclesOreilles, .tourDeCou, .sautoir
+  {width: 500px;
+  height: 500px;
+}
+}
