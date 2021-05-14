@@ -28,8 +28,4 @@ $(document).ready(function(){
           $(".boutons").css("margin-top","15px");
     });
 
-  
-
-
-
 });

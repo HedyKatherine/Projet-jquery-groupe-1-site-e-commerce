@@ -15,7 +15,7 @@ body, .card {
 }
 
 .logo {
-  width: 110px;
+  width: 180px;
   height: 80px;
 }
 
@@ -54,13 +54,13 @@ img {
   width: 20%;
 }
 
-.text:hover {
+/*.text:hover
+{
   transform: scale(1.3);
-}
-
-.modal-body {
-  display: flex;
-  flex-wrap: wrap;
+}*/
+.imagemodale {
+  height: 300px;
+  width: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */
