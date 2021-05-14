@@ -26,33 +26,34 @@
                 </div>
             <div class="row">
               <div class="d-flex justify-content-end">
-                <a href="basket.html"><img src="images/panier.png" alt="panier" style="width:30%; height:auto"></a>
+                <a href="basket.html"><img src="images/panier.svg" alt="panier" class="panier"></a>
               </div>
           </div>
         </nav>
       </header>
       <main class="container">
-        <h1>boutique</h1>
+        <h1 class=boutique>boutique</h1>
           <div class="row boutons">
-          <div id="categorie1" class="col-12 col-md-6 col-lg-3">
-            <img src="images/14.jpg" alt="collier vert bronze" class="imageProduit">
-                <p class="text">colliers</p>
+          <div id="categorie1" class="col-12 col-md-6 col-lg-3 bouton" style="width:250px;">
+            <img src="images/14.jpg" alt="collier vert bronze" class="imageBouton">
+            <p class="textBouton">colliers</p>
           </div>
-          <div id="categorie2" class="col-12 col-md-6 col-lg-3">
-              <img src="images/a.jpg" alt="sautoir" class="imageProduit">
-              <p class="text">sautoir</p>
+          <div id="categorie2" class="col-12 col-md-6 col-lg-3 bouton">
+            <img src="images/a.jpg" alt="sautoir" class="imageBouton">
+            <p class="textBouton">sautoir</p>
           </div>
-          <div id="categorie3" class=" col-12 col-md-6 col-lg-3">
-            <img src="images/8.jpg" alt="tour de cou cabochon bleu" class="imageProduit">
-            <p class="text">tour de cou</p>
+          <div id="categorie3" class=" col-12 col-md-6 col-lg-3 bouton">
+            <img src="images/8.jpg" alt="tour de cou cabochon bleu" class="imageBouton">
+            <p class="textBouton">tour de cou</p>
           </div>
-          <div class="col-12 col-md-6 col-lg-3" id="categorie4">
-            <img src="images/34.jpg" alt="boucles d'oreilles dragon" class="imageProduit">
-            <p class="text">boucles d'oreilles</p>
+          <div id="categorie4" class="col-12 col-md-6 col-lg-3 bouton">
+            <img src="images/34.jpg" alt="boucles d'oreilles dragon" class="imageBouton">
+            <p class="textBouton">boucles d'oreilles</p>
           </div>
+        </div>
         <!--carte 1-->
         <div class="row d.flex mt-5">
-          <div class="card col-12 col-md-6 col-lg-3 collierMiLong">
+          <div id="card1" class="card col-12 col-md-6 col-lg-3 collierMiLong">
             <h2>Collier Adenora</h2>
               <img id=img1 src=images/14.jpg onmouseover=passage1(this); onmouseout=departure1(this); />
                 <p>Collier estampe métallique et cristal de Bohème</p>
@@ -63,7 +64,7 @@
               <button type="button" id="panier1" class="btn">ajouter au panier</button>
           </div>
           <!-- carte 2 -->
-          <div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+          <div id="card2" class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
             <h2>boucles d'oreilles Dragon rouge</h2>
               <img id=img2 src=images/34.jpg onmouseover=passage2(this); onmouseout=departure2(this); />
                 <p>Boucles d'oreilles à estampe métallique et cristal de Bohème</p>

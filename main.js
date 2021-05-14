@@ -2,30 +2,35 @@ $(document).ready(function(){
     //pour afficher colliers mi-longs
     $("#categorie1").click(function(){
         $(".collierMiLong").toggle();
-        $(".imageProduit").css("width","50px");
-        $(".imageProduit").css("height","50px");
-        $(".boutons").css("margin-top","15px");
+        $(".imageBouton").css("width","50px");
+        $(".imageBouton").css("height","50px");
+        $(".bouton").css("margin-top","15px");
+        $(".bouton").css("height","50px");
+
 
         //$(".text").css("color","black");
         //$(".text").css("background","#EDF2FB");
     });
     $("#categorie2").click(function(){
         $(".sautoir").toggle();
-        $(".imageProduit").css("width","50px");
-        $(".imageProduit").css("height","50px");
-          $(".boutons").css("margin-top","15px");
+        $(".imageBouton").css("width","50px");
+        $(".imageBouton").css("height","50px");
+        $(".bouton").css("margin-top","15px");
+        $(".bouton").css("height","50px");
     });
     $("#categorie3").click(function(){
         $(".tourDeCou").toggle();
-        $(".imageProduit").css("width","50px");
-        $(".imageProduit").css("height","50px");
-          $(".boutons").css("margin-top","15px");
+        $(".imageBouton").css("width","50px");
+        $(".imageBouton").css("height","50px");
+        $(".bouton").css("margin-top","15px");
+        $(".bouton").css("height","50px");
     });
     $("#categorie4").click(function(){
         $(".bouclesOreilles").toggle();
-        $(".imageProduit").css("width","50px");
-        $(".imageProduit").css("height","50px");
-          $(".boutons").css("margin-top","15px");
+        $(".imageBouton").css("width","50px");
+        $(".imageBouton").css("height","50px");
+        $(".bouton").css("margin-top","15px");
+        $(".bouton").css("height","50px");
     });
 });
 
