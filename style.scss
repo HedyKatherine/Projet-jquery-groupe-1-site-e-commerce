@@ -21,6 +21,12 @@ background-color: #CCDBFD;
   height:80px;
 }
 ////////// page product///////
+.card
+{
+  width: 800px;
+  height: 650px;
+}
+
 .boutons
 {
   display: flex;
@@ -40,7 +46,7 @@ img
   display: flex;
   justify-content: center;
 }
-.collierMiLong, .dragon, .tourDeCou, .bouclesOreilles
+.collierMiLong, .sautoir, .tourDeCou, .bouclesOreilles
 {
   display: none;
 }
@@ -64,7 +70,7 @@ img
 }*/
 
 ///// page produit
-.collierMiLong, .bouclesOreilles, .tourDeCou, .dragon
+.collierMiLong, .bouclesOreilles, .tourDeCou, .sautoir
 {
   width: 800px;
   height: 650px;

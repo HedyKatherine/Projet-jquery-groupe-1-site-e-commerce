@@ -37,7 +37,7 @@ img {
   justify-content: center;
 }
 
-.collierMiLong, .dragon, .tourDeCou, .bouclesOreilles {
+.collierMiLong, .sautoir, .tourDeCou, .bouclesOreilles {
   display: none;
 }
 
@@ -58,7 +58,7 @@ img {
 {
   transform: scale(1.3);
 }*/
-.collierMiLong, .bouclesOreilles, .tourDeCou {
+.collierMiLong, .bouclesOreilles, .tourDeCou, .sautoir {
   width: 800px;
   height: 650px;
 }
