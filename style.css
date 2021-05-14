@@ -58,9 +58,9 @@ img {
 {
   transform: scale(1.3);
 }*/
-.imagemodale {
-  height: 300px;
-  width: 300px;
+.collierMiLong, .bouclesOreilles {
+  width: 800px;
+  height: 600px;
 }
 
 /*# sourceMappingURL=style.css.map */
