@@ -58,9 +58,9 @@ img {
 {
   transform: scale(1.3);
 }*/
-.collierMiLong, .bouclesOreilles {
+.collierMiLong, .bouclesOreilles, .tourDeCou {
   width: 800px;
-  height: 600px;
+  height: 650px;
 }
 
 /*# sourceMappingURL=style.css.map */
