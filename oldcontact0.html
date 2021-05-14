@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>contact</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a><button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Boutique</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-end">
+                    <a href="basket.html"><img src="images/panier.png" alt="panier" style="width:30%; height:auto" </img></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <form action="https://formspree.io/f/mzbyeepp" method="POST">
+            <div class="col">
+                <label>Nom:<input type="name" name="lastName"></label>
+            </div>
+            <div class="col">
+                <label>Prénom:<input type="name" name="firstName"></label>
+            </div>
+            <div class="col">
+                <label>Courriel:<input type="email" name="_replyto"></label>
+            </div>
+            <div class="col">
+                <label>Message:<textarea name="message"></textarea></label>
+            </div>
+            <button type="submit">envoyer</button>
+        </form>
+        <div class=" d-flex justify-content-center">
+            <div id="carouselContact" class="slide carousel" data-ride="carousel">
+                <!-- Carrousel -->
+                <div class="carousel-inner" style="width:300px; height:400px">
+                    <div class="carousel-item active" data-interval="4500">
+                        <img src="images/caroussel1.jpg" alt="Carrousel slide 1" class="d-block imageCarousel" style="width:300px; height:400px">
+                    </div>
+                    <div class="carousel-item" data-interval="4500">
+                        <img src="images/caroussel2.jpg" alt="Carrousel slide 2" class="d-block imageCarousel" style="width:300px; height:400px">
+                    </div>
+                    <div class="carousel-item" data-interval="4500">
+                        <img src="images/caroussel3.jpg" alt="Carrousel slide 3" class="d-block imageCarousel" style="width:300px; height:400px">
+                    </div>
+                    <div class="carousel-item" data-interval="4500">
+                        <img src="images/caroussel4.jpg" alt="Carrousel slide 3" class="d-block imageCarousel" style="width:300px; height:400px">
+                    </div>
+                    <div class="carousel-item" data-interval="4500">
+                        <img src="images/caroussel5.jpg" alt="Carrousel slide 3" class="d-block imageCarousel" style="width:300px; height:400px">
+                    </div>
+                </div>
+                <!-- Contrôles -->
+                <a class="carousel-control-prev" href="#carouselContact" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Précédent</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselContact" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Suivant</span>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <a href="https://www.instagram.com/vantascostumes/?hl=fr" target="_blank"><img src="images/128x128instagram.png" alt="LogoInstagram" style="width:5%; height:auto" </img></a>
+                <a href="https://www.facebook.com/Vantacostumes" target="_blank"><img src="images/128x128facebook.png" alt="LogoFacebook" style="width:5%; height:auto" </img></a>
+            </div>
+        </div>
+        <div>
+            <p class="copyright">&copy K.Burgain, A.Martina, E.Molina, S.Vesin</p>
+        </div>
+    </footer>
+    <!-- les scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

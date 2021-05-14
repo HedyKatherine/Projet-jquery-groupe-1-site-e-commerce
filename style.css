@@ -1,0 +1,92 @@
+@import url(https://fr.allfont.net/allfont.css?fonts=questrial);
+body,
+.card {
+    background-color: #EDF2FB;
+}
+
+.carousel {
+    border: solid;
+    border-color: #ABC4FF;
+    border-width: 2px;
+    border-radius: 2%;
+    box-shadow: 6px 6px 12px grey;
+}
+
+.navbar {
+    background-color: #CCDBFD;
+}
+
+.logo {
+    width: 180px;
+    height: 80px;
+}
+
+.boutons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.imageProduit {
+    width: 300px;
+    height: 400px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.collierMiLong,
+.dragon,
+.tourDeCou,
+.bouclesOreilles {
+    display: none;
+}
+
+.text {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 30%;
+    width: 20%;
+}
+
+
+/*.text:hover
+{
+  transform: scale(1.3);
+}*/
+
+.collierMiLong,
+.bouclesOreilles {
+    width: 800px;
+    height: 600px;
+}
+
+
+/*# sourceMappingURL=style.css.map */
+
+.pictoRS {
+    /* 128x128instagram */
+    position: relative;
+    left: 100px;
+    top: 150px;
+    width: 49px;
+    height: 49px;
+    background: url(128x128instagram.png);
+    /* 128x128facebook */
+    position: relative;
+    left: 300px;
+    top: 150px;
+    width: 49px;
+    height: 49px;
+    background: url(128x128facebook.png);
+}

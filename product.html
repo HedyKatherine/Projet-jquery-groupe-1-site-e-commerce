@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Boutique</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a><button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Boutique</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-end">
+                    <a href="basket.html"><svg xmlns="http://www.w3.org/2000/svg" width="74.621" height="67.001" viewBox="0 0 74.621 67.001">
+                        <g id="panier_icon" data-name="panier icon" transform="translate(0 0.007)">
+                          <path id="Tracé_1" data-name="Tracé 1" d="M29.7.108a6.142,6.142,0,0,0-2.071,1.163,11.365,11.365,0,0,0-1.743,2.57c-1.677,2.8-4.7,7.987-9.881,16.972l-4.175,7.234-.3.049c-.166.027-2.319.073-4.793.1l-4.492.053L1.8,28.53A3.687,3.687,0,0,0,.342,30.05L0,30.674l0,3.9c0,4.576.045,5.291.34,5.894A3.372,3.372,0,0,0,2.68,42.182a1.622,1.622,0,0,1,.442.123c0,.019.786,3.141,1.745,6.933,2.857,11.292,3.7,14.435,4.048,15.092a6.208,6.208,0,0,0,2.644,2.391l.548.274H62.674l.472-.238a6.685,6.685,0,0,0,2.581-2.321c.337-.618,1.165-3.739,3.905-14.711,1.02-4.081,1.868-7.43,1.886-7.447a2.6,2.6,0,0,1,.445-.109,3.308,3.308,0,0,0,2.317-1.711c.292-.595.334-1.317.337-5.886l0-3.9-.344-.624A3.212,3.212,0,0,0,72.9,28.579l-.548-.341h-2.7c-1.485,0-3.626-.022-4.759-.049l-2.06-.049L60.107,23.41C51.022,7.656,47.734,2.063,47.223,1.5A6.364,6.364,0,0,0,45.359.268,3.172,3.172,0,0,0,43.874,0,4.346,4.346,0,0,0,41.46.423a5.227,5.227,0,0,0-2.973,4.286,4.381,4.381,0,0,0,.76,2.855C40.262,9.515,42.529,13.5,49.18,25l1.76,3.046-.624.049c-.822.065-25.188.065-26.011,0l-.624-.049L25.441,25C32.1,13.488,34.359,9.514,35.378,7.557A4.809,4.809,0,0,0,36.1,5.7a5.188,5.188,0,0,0-.8-3.442A5.554,5.554,0,0,0,32.254.1a7.433,7.433,0,0,0-2.551,0ZM31.942,3.3a1.91,1.91,0,0,1,.991,1.1c.248.727.241.746-1.3,3.5-1.479,2.65-4.455,7.858-8.055,14.094-6.277,10.873-7.228,12.406-7.9,12.756a2.446,2.446,0,0,1-1.553-.034,2.1,2.1,0,0,1-.978-1,2.346,2.346,0,0,1-.055-1.523c.325-.792,16.212-28.234,16.592-28.66a1.982,1.982,0,0,1,2.258-.24Zm12.366-.126a1.5,1.5,0,0,1,.549.4c.358.445,3.186,5.2,7.132,11.993C55.135,20.973,60.214,29.8,60.815,30.9a6.306,6.306,0,0,1,.861,2.17,2.34,2.34,0,0,1-.423,1.081,2.024,2.024,0,0,1-2.792.267c-.431-.455-2.043-3.137-6.394-10.637C48,16.77,43.128,8.228,41.968,6.072a2.109,2.109,0,0,1-.391-1.1,2.042,2.042,0,0,1,2.731-1.8Zm-34.3,28.4a5.61,5.61,0,0,0,.644,4.1,5.709,5.709,0,0,0,2.661,2.086,6.97,6.97,0,0,0,2.81.117c1.807-.383,2.71-1.365,5.051-5.492l.561-.99H52.882l.96,1.66c1.727,2.985,2.438,3.864,3.586,4.428a5.309,5.309,0,0,0,4.8-.161A5.862,5.862,0,0,0,64.34,35a5.545,5.545,0,0,0,.272-.906,7.54,7.54,0,0,0,.037-2.383,1.2,1.2,0,0,1-.079-.278c0-.045,1.336-.065,3.484-.053l3.484.019.019,3.864.019,3.864H3.046V35.292c0-2.109.022-3.856.049-3.883s1.607-.049,3.51-.049h3.461l-.054.213ZM62.834,42.234c2.916.029,5.325.069,5.345.091.1.1-4.081,16.812-4.944,19.744-.254.86-.324,1.011-.6,1.287-.493.493-.647.53-2.482.6-1.921.074-41.612.078-44.963.005l-2.284-.05-.354-.209a3.275,3.275,0,0,1-.657-.552c-.346-.391-.307-.267-1.456-4.69-2.7-10.378-4.074-15.983-3.959-16.1a25.113,25.113,0,0,1,2.947-.119c4.2-.064,47.194-.071,53.407-.01Z" transform="translate(0 0)" fill="#a19e9e"/>
+                          <path id="Tracé_2" data-name="Tracé 2" d="M236.558,575.22a1.938,1.938,0,0,0-.544.413c-.215.246-.246.343-.3.944-.075.876-.081,14.307-.006,14.97a1.343,1.343,0,0,0,.7,1.176,1.605,1.605,0,0,0,1.955-.4c.274-.482.3-1.211.347-8.794l.043-7.424-.457-.423c-.64-.594-1.151-.729-1.737-.462Z" transform="translate(-217.713 -531.306)" fill="#a19e9e"/>
+                          <path id="Tracé_3" data-name="Tracé 3" d="M347.846,575.106c-.041.013-.175.046-.289.071a2.084,2.084,0,0,0-.944.836c-.1.2-.131.784-.188,4.119-.072,4.249-.021,10.214.1,11.231.1.891.219,1.1.761,1.374a1.3,1.3,0,0,0,1.447-.013c.537-.286.642-.478.748-1.361.12-.991.18-8.513.1-11.878-.083-3.327-.126-3.631-.554-3.995a2.039,2.039,0,0,0-.617-.307c-.4-.118-.425-.121-.557-.078Z" transform="translate(-320.016 -531.299)" fill="#a19e9e"/>
+                          <path id="Tracé_4" data-name="Tracé 4" d="M470.3,575.462a1.549,1.549,0,0,0-.874.666c-.192.289-.212.4-.263,1.431-.081,1.614-.075,12.432.008,13.561.1,1.4.211,1.643.879,1.953a1.311,1.311,0,0,0,1.332-.03c.633-.32.746-.605.846-2.121.11-1.69.041-13.7-.083-14.262-.136-.617-.269-.82-.672-1.026a1.377,1.377,0,0,0-1.173-.173Z" transform="translate(-433.387 -531.589)" fill="#a19e9e"/>
+                          <path id="Tracé_5" data-name="Tracé 5" d="M583.066,575.316a3.214,3.214,0,0,0-.628.51l-.438.43v7.013c0,7.241.043,8.57.293,9.13a1.3,1.3,0,0,0,1.237.655,1.385,1.385,0,0,0,1.118-.472c.234-.247.258-.32.322-.982.085-.879.09-12.853.005-14.391-.069-1.256-.123-1.4-.654-1.712a1.712,1.712,0,0,0-1.256-.18Z" transform="translate(-537.684 -531.465)" fill="#a19e9e"/>
+                          <path id="Tracé_6" data-name="Tracé 6" d="M704.713,575.2a3.434,3.434,0,0,0-.64.523l-.373.381.043,7.409c.044,7.538.074,8.314.342,8.779a1.6,1.6,0,0,0,1.96.405,1.339,1.339,0,0,0,.691-1.136c.075-.614.072-13.683,0-14.833l-.057-.876-.32-.309a1.418,1.418,0,0,0-1.644-.343Z" transform="translate(-650.118 -531.287)" fill="#a19e9e"/>
+                        </g>"alt="panier" style="width:30%; height:auto"</svg></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>boutique</h2>
+            <div class="row boutons">
+                <div class="col-12 col-md-6 col-lg-3" id="categorie1">
+                    <img src="images/14.jpg" alt="collier vert bronze" class="imageProduit"></button>
+                    <p class="text">colliers</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" id="categorie2">
+                    <img src="images/11.jpg" alt="pendentif dragon" class="imageProduit">
+                    <p class="text">pendentifs</p>
+                </div>
+                <div class=" col-12 col-md-6 col-lg-3" id="categorie3">
+                    <img src="images/8.jpg" alt="tour de cou cabochon bleu" class="imageProduit">
+                    <p class="text">tour de cou</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" id="categorie4">
+                    <img src="images/34.jpg" alt="boucles d'oreilles dragon" class="imageProduit" <p class="text">boucles d'oreilles</p>
+                </div>
+                <!--carte 1-->
+                <div class="row d.flex mt-5">
+                    <div class="card col-12 col-md-6 col-lg-3 collierMiLong">
+                        <h2>Collier Adenora</h2>
+                        <img src="images/14.jpg" alt="collier vert bronze">
+                        <!--<img src="images/14.jpg"alt="collier estampe métallique bronze et cristal de Bohème vert et jais"class="imagemodale"></img>
+              <img src="images/15.jpg"alt="détail collier Adenora"class="imagemodale"></img>
+              <img src="images/16.jpg"alt="fermeture collier"class="imagemodale"></img>-->
+                        <p>Collier estampe métallique et cristal de Bohème</p>
+                        <p>métal couleur bronze, cristal de Bohème vert sapin et jais</p>
+                        <p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+                        <p>Longueur : environ 27cm</p>
+                        <p> Prix : 20€</p>
+                        <button type="button" class="btn" id="panier1">ajouter au panier</button>
+                    </div>
+                    <!-- carte 2 -->
+                    <div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+                        <h2>boucles d'oreilles Dragon rouge</h2>
+                        <img src="images/34.jpg" alt="boucles d'oreilles dragon">
+                        <!--  <img src="images/34.jpg"alt="boucles d'oreilles estampe dragon"></img>
+              <img src="images/35.jpg"alt="détail boucles d'oreilles estampe dragon"></img>-->
+                        <p>Boucles d'oreilles à estampe métallique et cristal de Bohème</p>
+                        <p>Métal couleur bronze, cristal de Bohème rouge et jais </p>
+                        <p>Possibilité de monter les boucles d'oreilles sur clip</p>
+                        <p>Longueur : environ 10cm</p>
+                        <p> Prix : 8,50€</p>
+                        <button type="button" class="btn" id="panier2">ajouter au panier</button>
+                    </div>
+                    <!--carte 3-->
+                    <div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+                        <h2>boucles d'oreilles chat</h2>
+                        <img src="images/42.jpg" alt="boucles d'oreilles chat">
+                        <!--  <img src="images/42.jpg"alt="boucles d'oreilles chat-clé"></img>
+                    <img src="images/43.jpg"alt="détail boucles d'oreilles chat-clé"></img>-->
+                        <p>Boucles d'oreilles breloque et cristal de Bohème </p>
+                        <p>métal argenté, breloque en forme de clé, cristal de Bohème </p>
+                        <p>Possibilité de monter les boucles d'oreilles sur clip</p>
+                        <p>Longueur : environ 6cm</p>
+                        <p> Prix : 6,50€</p>
+                        <button type="button" class="btn">ajouter au panier</button>
+                    </div>
+                    <!--carte 4-->
+                    <div class="card col-12 col-md-6 col-lg-3 collierMiLong">
+                        <h2>collier Automne</h2>
+                        <img src="images/17.jpg" alt="collier automne" data-toggle="modal" data-target="#modal4"></img>
+                        <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>collier Automne</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/17.jpg" alt="collier estampe métallique cristal de Bohème rouge orange jaune"></img>
+                                        <img src="images/18.jpg" alt="détail collier estampe métallique cristal de Bohème rouge orange jaune"></img>
+                                        <img src="images/19.jpg" alt="détail collier estampe métallique cristal de Bohème rouge orange jaune"></img>
+                                        <img src="images/16.jpg" alt=" détail fermeture collier"></img>
+                                        <p>Collier Automne</p>
+                                        <p>Collier estampe métallique et cristal de Bohème</p>
+                                        <p>métal couleur bronze, cristal de Bohème rouge, jaune et rose</p>
+                                        <p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+                                        <p>Longueur : environ 30cm</p>
+                                        <p> Prix : 27€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal4">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 5 -->
+                    <div class="card col-12 col-md-6 col-lg-3 tourDeCou">
+                        <img src="images/1.jpg" alt="collier steampunk" data-toggle="modal" data-target="#modal5"></img>
+                        <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>collier steampunk</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/1.jpg" alt="collier ras du cou velours breloque steampunk cabochon"></img>
+                                        <img src="images/2.jpg" alt="détail collier ras du cou velours breloque steampunk cabochon"></img>
+                                        <img src="images/50.jpg" alt="détail cabochon"></img>
+                                        <img src="images/3.jpg" alt="détail fermeture collier"></img>
+                                        <p>Collier steampunk</p>
+                                        <p>ras du cou en velours pendentif cabochon verre et estampe métallique </p>
+                                        <p>Métal couleur bronze, velours brun, cabochon de verre</p>
+                                        <p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+                                        <p>Longueur : environ 20cm</p>
+                                        <p> Prix : 15€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal5">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 6 -->
+                    <div class="card col-12 col-md-6 col-lg-3 collierMiLong">
+                        <img src="images/c.jpg" alt="sautoir vert bronze" data-toggle="modal" data-target="#modal6"></img>
+                        <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>collier Alvanna bronze</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/c.jpg" alt="collier sautoir perles bronze et cristal de Bohème vert et jais"></img>
+                                        <img src="images/b.jpg" alt="détail collier sautoir perles bronze et cristal de Bohème vert et jais"></img>
+                                        <img src="images/f.jpg" alt="collier sautoir perles bronze et cristal de Bohème vert et jais"></img>
+                                        <img src="images/e.jpg" alt="détail fermeture collier"></img>
+                                        <p>Collier Alvanna bronze</p>
+                                        <p>Collier 2 en 1 double rang/sautoir en perles métalliques et cristal de Bohème</p>
+                                        <p>Métal couleur bronze, cristal de Bohème vert sapin et jais</p>
+                                        <p>Fermeture par fermoir à crochet</p>
+                                        <p>Longueur :</br>- double rang : environ 34cm</br>- sautoir : environ 50cm</p>
+                                        <p> Prix : 30€</p>
+                                    </div>
+                                    <div class="modal-footer" hidden>
+                                        <button type="button" class="btn" data-dismiss="modal6">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--carte 7 -->
+                    <div class="card col-12 col-md-6 col-lg-3 collierMiLong">
+                        <img src="images/g.jpg" alt="sautoir vert argent" data-toggle="modal" data-target="#modal7"></img>
+                        <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>collier Alvanna argent</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/h.jpg" alt="collier sautoir perles métal argenté et cristal de Bohème vert"></img>
+                                        <img src="images/i.jpg" alt="détail collier sautoir perles métal argenté et cristal de Bohème vert"></img>
+                                        <img src="images/k.jpg" alt="collier sautoir perles métal argenté et cristal de Bohème vert"></img>
+                                        <img src="images/j.jpg" alt="détail fermeture collier"></img>
+                                        <p>collier Alvanna argent</p>
+                                        <p>Collier 2 en 1 double rang/sautoir en perles métalliques et cristal de Bohème</p>
+                                        <p>Métal couleur argent, cristal de Bohème vert </p>
+                                        <p>Fermeture par fermoir à crochet</p>
+                                        <p>Longueur :</br>- double rang : environ 24cm
+                                            <:br>- sautoir : environ 40cm</p>
+                                        <p> Prix : 30€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal7">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--carte 8-->
+                    <div class="card col-12 col-md-6 col-lg-3 tourDeCou">
+                        <img src="images/8.jpg" alt="tour de cou cabochon bleu" data-toggle="modal" data-target="#modal8"></img>
+                        <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>ras du cou Anaïk</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/8.jpg" alt="ras du cou ruban bleu cabochon verre bleu"></img>
+                                        <img src="images/9.jpg" alt="ras du cou ruban bleu cabochon verre bleu"></img>
+                                        <img src="images/10.jpg" alt=" détail fermeture collier"></img>
+                                        <p>Ras du cou Anaïk </p>
+                                        <p>ras du cou ruban de satin, cabochon de verre</p>
+                                        <p>Métal argenté, ruban de satin bleu, cabochon de verre</p>
+                                        <p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+                                        <p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+                                        <p> Prix : 10€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal8">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 9-->
+                    <div class="card col-12 col-md-6 col-lg-3 tourDeCou">
+                        <img src="images/52.jpg" alt="tour de cou Serdaigle" data-toggle="modal" data-target="#modal9"></img>
+                        <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>ras du cou Serdaigle/h1>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/51.jpg" alt="ras du cou velours bleu estampe métallique argent cristal de Bohème bleu"></img>
+                                        <img src="images/52.jpg" alt="détail ras du cou velours bleu estampe métallique argent cristal de Bohème bleu"></img>
+                                        <img src="images/53.jpg" alt="détail fermeture collier"></img>
+                                        <p>Un tour de cou aux couleurs de la maison Serdaigle... </p>
+                                        <p>Velours bleu roi, estampe en métal argenté, cristal de Bohème </p>
+                                        <p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+                                        <p>Longueur : environ 30cm</p>
+                                        <p> Prix : 9€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal9">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 10-->
+                    <div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+                        <img src="images/46.jpg" alt="boucles d'oreilles Serdaigle" data-toggle="modal" data-target="#modal10"></img>
+                        <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>boucles d'oreilles Serdaigle</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/46.jpg" alt="boucles d'oreilles estampe métallique argent cristal de Bohème bleu"></img>
+                                        <img src="images/47.jpg" alt="détail boucles d'oreilles estampe métallique argent cristal de Bohème bleu"></img>
+                                        <p>Des boucles d'oreilles aux couleurs de la maison Serdaigle...</p>
+                                        <p>métal argenté, cristal de Bohème bleu</p>
+                                        <p>Possibilité de monter les boucles d'oreilles sur clip</p>
+                                        <p>Longueur : environ 5cm</p>
+                                        <p> Prix : 5,50€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal10">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 11 -->
+                    <div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+                        <img src="images/48.jpg" alt="boucles d'oreilles Serpentard" data-toggle="modal" data-target="#modal11"></img>
+                        <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>ras du cou Serpentard </h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/54.jpg" alt="ras du cou velours vert estampe métallique argent cristal de Bohème vert"></img>
+                                        <img src="images/55.jpg" alt="détail ras du cou velours vert estampe métallique argent cristal de Bohème vert"></img>
+                                        <img src="images/56.jpg" alt="fermeture collier"></img>
+                                        <p>Un tour de cou aux couleurs de la maison Serpentard...</p>
+                                        <p>Velours vert, estampe en métal argenté, cristal de Bohème</p>
+                                        <p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+                                        <p>Longueur : environ 30cm</p>
+                                        <p> Prix : 9€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal11">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 12-->
+                    <div class="card col-12 col-md-6 col-lg-3 tourDeCou">
+                        <img src="images/54.jpg" alt="boucles d'oreilles Serpentard" data-toggle="modal" data-target="#modal12"></img>
+                        <div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>boucles d'oreilles serpentard</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/48.jpg" alt="boucles d'oreilles estampe métallique argent cristal de Bohème vert"></img>
+                                        <img src="images/49.jpg" alt="détail boucles d'oreilles estampe métallique argent cristal de Bohème vert"></img>
+                                        <p>Des boucles d'oreilles aux couleurs de la maison Serpentard.</p>
+                                        <p>métal argenté, cristal de Bohème vert</p>
+                                        <p>Possibilité de monter les boucles d'oreilles sur clip</p>
+                                        <p>Longueur : environ 5cm</p>
+                                        <p> Prix : 5,50€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal12">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 13 -->
+                    <div class="card col-12 col-md-6 col-lg-3 tourDeCou">
+                        <img src="images/62.jpg" alt="boucles d'oreilles Poussoufle" data-toggle="modal" data-target="#modal13"></img>
+                        <div class="modal fade" id="modal13" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>ras du cou Poussoufle</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/60.jpg" alt="ras du cou velours noir estampe métallique bronze cristal de Bohème noir"></img>
+                                        <img src="images/62.jpg" alt="détail ras du cou velours noir estampe métallique bronze cristal de Bohème noir"></img>
+                                        <img src="images/61.jpg" alt="fermeture collier"></img>
+                                        <p>Un tour de cou aux couleurs de la maison Poufsouffle...</p>
+                                        <p>Velours noir, estampe en métal argenté, cristal de Bohème</p>
+                                        <p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+                                        <p>Longueur : environ 30cm</p>
+                                        <p> Prix : 9€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal13">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 14-->
+                    <div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+                        <img src="images/44.jpg" alt="boucles d'oreilles Poussoufle" data-toggle="modal" data-target="#modal14"></img>
+                        <div class="modal fade" id="modal14" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>boucles d'oreilles Poussoufle</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/44.jpg" alt="boucles d'oreilles estampe métallique bronze cristal de Bohème noir"></img>
+                                        <img src="images/45.jpg" alt="boucles d'oreilles estampe métallique bronze cristal de Bohème noir"></img>
+                                        <p>Des boucles d'oreilles aux couleurs de la maison Poufsouffle...</p>
+                                        <p>métal de couleur bronze , cristal de Bohème jais </p>
+                                        <p>Possibilité de monter les boucles d'oreilles sur clip</p>
+                                        <p>Longueur : environ 5cm</p>
+                                        <p> Prix : 5,50€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal14">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 15-->
+                    <div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+                        <img src="images/63.jpg" alt="boucles d'oreilles Griffondor" data-toggle="modal" data-target="#modal15"></img>
+                        <div class="modal fade" id="modal15" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>ras du cou Griffondor</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/63.jpg" alt="boucles d'oreilles estampe bronze cristal de Bohème rouge"></img>
+                                        <p>Un tour de cou aux couleurs de la maison Gryffondor...</p>
+                                        <p>Velours rouge, estampe en métal argenté, cristal de Bohème</p>
+                                        <p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+                                        <p>Longueur : environ 30cm</p>
+                                        <p> Prix : 9€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal15">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 16-->
+                    <div class="card col-12 col-md-6 col-lg-3 tourDeCou">
+                        <img src="images/57.jpg" alt="boucles d'oreilles Griffondor" data-toggle="modal" data-target="#modal16"></img>
+                        <div class="modal fade" id="modal16" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>boucles d'oreilles Griffondor</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/57.jpg" alt="ras du cou velours rouge estampe métallique bronze cristal de Bohème rouge"></img>
+                                        <img src="images/58.jpg" alt="détail ras du cou velours rouge estampe métallique bronze cristal de Bohème rouge"></img>
+                                        <img src="images/59.jpg" alt="détail fermeture collier"></img>
+                                        <p>Des boucles d'oreilles aux couleurs de la maison Gryffondor..</p>
+                                        <p>Possibilité de monter les boucles d'oreilles sur clip</p>
+                                        <p>Longueur : environ 5cm</p>
+                                        <p> Prix : 5,50€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal16">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 17 -->
+                    <div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+                        <img src="images/27.jpg" alt="boucles d'oreilles bleu bronze" data-toggle="modal" data-target="#modal17"></img>
+                        <div class="modal fade" id="modal17" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>boucles d'oreilles Bahiga 1/h1>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/30.jpg" alt="boucles d'oreilles estampe métallique bronze cristal de Bohème bleu"></img>
+                                        <img src="images/31.jpg" alt="détail boucles d'oreilles estampe métallique bronze cristal de Bohème bleu"></img>
+                                        <p>Boucles d'oreilles Bahiga 1</p>
+                                        <p>Boucles d'oreilles à estampe métallique et cristal de Bohème</p>
+                                        <p>métal couleur bronze, cristal de Bohème bleu canard, bleu ciel et jais</p>
+                                        <p>Possibilité de monter les boucles d'oreilles sur clip </p>
+                                        <p>Longueur : environ 7cm</p>
+                                        <p> Prix : 8,00€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal17">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 18-->
+                    <div class="card col-12 col-md-6 col-lg-6 dragon">
+                        <img src="images/11.jpg" alt="pendentif dragon rouge" data-toggle="modal" data-target="#modal18"></img>
+                        <div class="modal fade" id="modal18" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>pendentif Dragon rouge</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/11.jpg" alt="boucles d'oreilles estampe dragon cristal de Bohème rouge"></img>
+                                        <img src="images/12.jpg" alt="détail boucles d'oreilles estampe dragon cristal de Bohème rouge"></img>
+                                        <img src="images/13.jpg" alt="détail fermeture collier"></img>
+                                        <p>Collier pendentif dragon rouge </p>
+                                        <p>Collier estampe métallique et cristal de Bohème</p>
+                                        <p>Métal couleur bronze et cristal de Bohème rouge et jais</p>
+                                        <p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+                                        <p>Longueur : environ 28cm</p>
+                                        <p> Prix : 14,50€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal18">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 19 -->
+                    <div class="card col-12 col-md-6 col-lg-6 dragon">
+                        <img src="images/m.jpg" alt="pendentif dragon vert" data-toggle="modal" data-target="#modal19"></img>
+                        <div class="modal fade" id="modal19" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>pendentif dragon vert</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/m.jpg" alt="collier pendentif estampe métallique dragon cristal de Bohème vert"></img>
+                                        <img src="images/n.jpg" alt="détail collier pendentif estampe métallique dragon cristal de Bohème vert"></img>
+                                        <img src="images/13.jpg" alt="fermeture collier"></img>
+                                        <p>Collier pendentif dragon vert</p>
+                                        <p>Collier estampe métallique et cristal de Bohème</p>
+                                        <p>Métal couleur bronze et cristal de Bohème vert et jais</p>
+                                        <p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+                                        <p>Longueur : environ 28cm</p>
+                                        <p> Prix : 14,50€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal19">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 20 -->
+                    <div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+                        <img src="images/30.jpg" alt="boucles d'oreilles bleu bronze" data-toggle="modal" data-target="#modal20"></img>
+                        <div class="modal fade" id="modal20" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>boucles d'oreilles Bahiga 5</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/26.jpg" alt="boucles d'oreilles estampe métallique bronze cristal Bohème bleu"></img>
+                                        <img src="images/27.jpg" alt="détail boucles d'oreilles estampe métallique bronze cristal Bohème bleu"></img>
+                                        <p>Boucles d'oreilles Bahiga 5</p>
+                                        <p>Boucles d'oreilles à estampe métallique et cristal de Bohème</p>
+                                        <p>métal couleur bronze, cristal de Bohème bleu ciel et bleu roi</p>
+                                        <p>Possibilité de monter les boucles d'oreilles sur clip</p>
+                                        <p>Longueur : environ 8cm</p>
+                                        <p> Prix : 8€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal20">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 21-->
+                    <div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+                        <img src="images/32.jpg" alt="boucles d'oreilles bronze rouge bleu" data-toggle="modal" data-target="#modal21"></img>
+                        <div class="modal fade" id="modal21" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>boucles d'oreilles Aggrabah/h1>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/32.jpg" alt="boucles d'oreilles estampe métallique bronze cristal de Bohème rouge et bleu"></img>
+                                        <img src="images/33.jpg" alt="détail boucles d'oreilles estampe métallique bronze cristal de Bohème rouge et bleu "></img>
+                                        <p>Boucles d'oreilles Agrabah</p>
+                                        <p>Boucles d'oreilles à estampe métallique et cristal de Bohème</p>
+                                        <p>métal couleur bronze, cristal de Bohème rouge et bleu roi</p>
+                                        <p>Possibilité de monter les boucles d'oreilles sur clip</p>
+                                        <p>Longueur : environ 12cm</p>
+                                        <p> Prix : 8,50€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal21">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 22-->
+                    <div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+                        <img src="images/38.jpg" alt="boucles d'oreilles baroque perles" data-toggle="modal" data-target="#modal22"></img>
+                        <div class="modal fade" id="modal22" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>boucles d'oreilles Louise</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/38.jpg" alt="boucles d'oreilles perles blanches et noires"></img>
+                                        <img src="images/39.jpg" alt="détail boucles d'oreilles perles blanches et noires"></img>
+                                        <p>Boucles d'oreilles Louise</p>
+                                        <p>Boucles d'oreilles en perles</p>
+                                        <p>Perles en acrylique blanches, métal doré</p>
+                                        <p>Possibilité de monter les boucles d'oreilles sur clip</p>
+                                        <p>Longueur : environ 7cm</p>
+                                        <p> Prix : 7,50€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal22">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 23 -->
+                    <div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+                        <img src="images/40.jpg" alt="boucles d'oreilles baroque vert bronze" data-toggle="modal" data-target="#modal23"></img>
+                        <div class="modal fade" id="modal23" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>boucles d'oreilles Bailee</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/40.jpg" alt="boucles d'oreilles estampe métallique bronze cristal de Bohème vert"></img>
+                                        <img src="images/41.jpg" alt="détail boucles d'oreilles estampe métallique bronze cristal de Bohème vert"></img>
+                                        <p>Boucles d'oreilles Bailee</p>
+                                        <p>Boucles d'oreilles à estampe métallique et cristal de Bohème</p>
+                                        <p>métal couleur bronze, cristal de Bohème vert sapin et vert clair</p>
+                                        <p>Possibilité de monter les boucles d'oreilles sur clip</p>
+                                        <p>Longueur : environ 8cm</p>
+                                        <p> Prix : 7€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal23">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 24 -->
+                    <div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+                        <img src="images/28.jpg" alt="boucles d'oreilles fleur art nouveau vert bronze" data-toggle="modal" data-target="#modal24"></img>
+                        <div class="modal fade" id="modal24" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>Boucles d'oreilles Báirbre 5</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/28.jpg" alt="boucles d'oreilles estampe métallique bronze cristal de Bohème vert"></img>
+                                        <img src="images/29.jpg" alt="détail boucles d'oreilles estampe métallique bronze cristal de Bohème vert"></img>
+                                        <p>Boucles d'oreilles Báirbre 5</p>
+                                        <p>Boucles d'oreilles à estampe métallique et cristal de Bohème</p>
+                                        <p>métal de couleur bronze, cristal de Bohème vert</p>
+                                        <p>Possibilité de monter les boucles d'oreilles sur clip</p>
+                                        <p>Longueur : environ 5cm</p>
+                                        <p> Prix : 8,00€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal24">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carte 25 -->
+                    <div class="card col-12 col-md-6 col-lg-3 collierMiLong">
+                        <img src="images/4.jpg" alt="collier pieuvre" data-toggle="modal" data-target="#modal25"></img>
+                        <div class="modal fade" id="modal25" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>collier octopus</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/4.jpg" alt="collier estampe métallique bronze pieuvre"></img>
+                                        <img src="images/5.jpg" alt="détail collier estampe métallique bronze pieuvre"></img>
+                                        <img src="images/7.jpg" alt="fermeture collier"></img>
+                                        <p>Collier Octopus</p>
+                                        <p>Collier métallique </p>
+                                        <p>métal et estampe couleur bronze </p>
+                                        <p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+                                        <p>Longueur : environ 22cm</p>
+                                        <p> Prix : 15€</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-dismiss="modal24">Fermer</button>
+                                        <button type="button" class="btn">ajouter au panier</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <a href="https://www.instagram.com/vantascostumes/?hl=fr" target="_blank"><img src="images/128x128instagram.png" alt="LogoInstagram" style="width:5%; height:auto"></img>
+                </a>
+                <a href="https://www.facebook.com/Vantacostumes" target="_blank"><img src="images/128x128facebook.png" alt="LogoFacebook" style="width:5%; height:auto"></img>
+                </a>
+            </div>
+        </div>
+        <div>
+            <p class="copyright">&copy K.Burgain, A.Martina, E.Molina, S.Vesin</p>
+        </div>
+    </footer>
+    <!-- les scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="/home/sophie/projet/exercices/jquerry/projetGroupe/main.js"></script>
+</body>
+
+</html>
