@@ -34,15 +34,18 @@
 
 
 /////variables
-$mainTypo: #000614;
+$mainColorTypo: #000614;
 $mainPaddingTop: 20px;
+$fontEmphasize : "amaranteregular";
+
+
 
 
 //////règles générales
 body
 {
 background-color: #EDF2FB;
-color: $mainTypo
+color: $mainColorTypo
 }
 //////////////////header///////
 .navbar
@@ -103,7 +106,7 @@ background-color: #CCDBFD;
   margin-top: $mainPaddingTop;
   display: flex;
   justify-content: center;
-  font-family: 'amaranteregular';
+  font-family: $fontEmphasize,sans-serif;
   color: #00123D;
 }
 .bordureDroite
@@ -142,7 +145,7 @@ justify-content: center;
 vertical-align: center;
 text-align: center;
 background-color: rgba(0, 18, 61, 0.5);
-font-family: 'amaranteregular';
+font-family: $fontEmphasize, sans-serif;
 font-size: 30px;
 color: white;
 width: 190px;
@@ -162,13 +165,12 @@ margin-left: 45px;
   margin-bottom: 5px;
   border-radius: 2%;
   display: flex;
-
-  //display: none;
+  display: none;
 }
 @media screen and (max-width: 767px)
 {.collierMiLong, .bouclesOreilles, .tourDeCou, .sautoir
   {width: 480px;
-  height: 530px;
+  height: 600px;
   display: flex;
   justify-content: center;
 }
@@ -183,6 +185,14 @@ img
 h2
 {
   text-align: center;
-  font-family: 'amaranteregular';
+  font-family: $fontEmphasize,sans-serif;
   font-size: 22px;
+  margin-top: 8px;
+}
+.btn
+{
+  font-family: $fontEmphasize, sans-serif;
+  font-size: 20px;
+  background-color: #B1C7FC;
+
 }
