@@ -9,8 +9,11 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-sm navbar-light">
-      <a class="navbar-brand" href="index.html"><img src="images/logo.png"alt="logo" class="logo"></a><button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+      <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -26,16 +29,16 @@
       </div>
       <div class="row">
         <div class="d-flex justify-content-end">
-          <a href="basket.html"><img src="images/panier.png" alt="panier" style="width:30%; height:auto"></a>
+          <a href="basket.html"><img src="images/panier.svg" alt="panier" class="panier"></a>
         </div>
       </div>
     </nav>
   </header>
-  <main class="container">
+  <main class="container pageAccueil">
     <div class="row">
-      <div class="col">
-        <p>Vanta’s costumes vous propose des bijoux originaux aux inspirations fantastiques, baroques et féeriques en cristal de Bohème.</p>
-        <p>Pour vous, vous offrir, pour tous les jours ou pour une occasion particulière, vous trouverez votre bonheur à coup sûr… </p>
+      <div class="col mt-5">
+        <p class="intro">Vanta’s costumes vous propose des bijoux originaux aux inspirations fantastiques, baroques et féeriques en cristal de Bohème.</p>
+        <p class="intro">Pour vous, vous offrir, pour tous les jours ou pour une occasion particulière, vous trouverez votre bonheur à coup sûr… </p>
       </div>
     </div>
     <div class=" d-flex justify-content-center">
@@ -69,21 +72,26 @@
         </a>
       </div>
     </div>
+    <p class="barre">W</p>
   </main>
   <footer>
-    <div class="row">
-      <div class="col">
-        <a href="https://www.instagram.com/vantascostumes/?hl=fr" target="_blank"><img src="images/128x128instagram.png" alt="LogoInstagram" href=""style="width:5%; height:auto"></a>
-        <a href="https://www.facebook.com/Vantacostumes" target="_blank"><img src="images/128x128facebook.png" alt="LogoFacebook" style="width:5%; height:auto"></a>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col liens">
+          <a href="https://www.instagram.com/vantascostumes/?hl=fr" target="_blank"><img src="images/128x128instagram.png" alt="LogoInstagram" style="width:5%; height:auto"></a>
+          <a href="https://www.facebook.com/Vantacostumes" target="_blank"><img src="images/128x128facebook.png" alt="LogoFacebook" style="width:5%; height:auto"></a>
+        </div>
       </div>
-    </div>
-    <div>
-      <p class="copyright">&copy K.Burgain, A.Martina, E.Molina, S.Vesin</p>
+      <div>
+        <p class="copyright">&#169;&#160;K.Burgain, A.Martina, E.Molina, S.Vesin</p>
+      </div>
     </div>
   </footer>
   <!-- les scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
   <script src="main.js"></script>
+  <script src="script-article"></script>
+  <script src="script-panier.js"></script>
 </body>
 </html>

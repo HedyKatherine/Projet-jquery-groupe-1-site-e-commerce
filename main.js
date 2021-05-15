@@ -1,105 +1,37 @@
-/*
-// function for cart widget
-$(document).ready(function()
-{
-  $(".widgetPanier .contentWidget").append(panier);
-  verifierConnecter ();
-
-  ajouterPagePanier();
-
-  $(".MettreAJourPanier").click(function() { MettreAJourPanier(); });
-  $("#SupprimerPanier").click(function() { SupprimerPanier (); });
-
-  $("body").on("click", ".btSupprimer", function()
-  {
-
-    if($(this).parent().parent().hasClass("articlePanier"))
-    {
-
-      var parentPrincipal = $(this).parent().parent();
-      var caractereTot = parentPrincipal.attr("class").length;
-      caractereTot = caractereTot - 6;
-      var idArticlePanier = parentPrincipal.attr("class").substring(caractereTot);
-
-      $("#" + idArticlePanier + "").remove();
-      $(parentPrincipal).remove();
-      localStorage.removeItem("panier");
-      totalPanier();
-      enregistrerPanier();
-      ajouterPagePanier();
-    }
-    else if($(this).parent().hasClass("contentPanier"))
-    {
-      $(this).parent().remove();
-      localStorage.removeItem("panier");
-      totalPanier();
-      enregistrerPanier();
-      ajouterPagePanier();
-
-    }
-
-    return false;
-  });
-
-
-
-});
-*/
-/*
-(function($){
-const cartInfo = document.querySelector("la class ou se trouve le logo panier");
-const cart = document.getElementById("cart");
-cartInfo.addEventListener("click", function(){
-cart.classList.toggle('show-cart');
-});
-});
-*/
-/*
-// ---------------DONNEES DU LOCAL STORAGE
-// ajouter une donnée = .setItem(nomClé,valeurClé);
-// récupérer une donnée = .session.getItem(clé);
-// supprimé une donnée = .removeItem(clé);
-// supprimé toutes les données = .clear();
-localStorage.setItem("nom", "toto");
-localStorage.setItem("prenom", "chouchou");
-localStorage.setItem("ville", "paris");
-// recupérer une donnée dans le local storage
-// let maDonnee = localStorage.getItem("nom");
-// console.log(maDonnee);
-// supprimé une donnée dans le local storage
-// localStorage.removeItem("nom");
-// supprimé toutes les données du local storage - vide toutes les clés
-// localStorage.clear();
-console.log(localStorage.nom);
-*/
 $(document).ready(function(){
   //pour afficher colliers mi-longs
   $("#categorie1").click(function(){
     $(".collierMiLong").toggle();
-    $(".imageProduit").css("width","50px");
-    $(".imageProduit").css("height","50px");
-    $(".boutons").css("margin-top","15px");
-
-    //$(".text").css("color","black");
-    //$(".text").css("background","#EDF2FB");
+    $(".imageBouton").css("display","none");
+    $(".textBouton").css("margin-top","5px");
+    $(".textBouton").css("font-size","20px");
+    $(".boutons").css("height","20px");
+    $(".bouton").css("height","20px");
   });
   $("#categorie2").click(function(){
     $(".sautoir").toggle();
-    $(".imageProduit").css("width","50px");
-    $(".imageProduit").css("height","50px");
-    $(".boutons").css("margin-top","15px");
+    $(".imageBouton").css("display","none");
+    $(".textBouton").css("margin-top","5px");
+    $(".textBouton").css("font-size","20px");
+    $(".boutons").css("height","20px");
+    $(".bouton").css("height","20px");
   });
   $("#categorie3").click(function(){
     $(".tourDeCou").toggle();
-    $(".imageProduit").css("width","50px");
-    $(".imageProduit").css("height","50px");
-    $(".boutons").css("margin-top","15px");
+    $(".imageBouton").css("display","none");
+    $(".textBouton").css("margin-top","5px");
+    $(".textBouton").css("font-size","20px");
+    $(".boutons").css("height","20px");
+    $(".bouton").css("height","20px");
   });
   $("#categorie4").click(function(){
     $(".bouclesOreilles").toggle();
-    $(".imageProduit").css("width","50px");
-    $(".imageProduit").css("height","50px");
-    $(".boutons").css("margin-top","15px");
+    $(".imageBouton").css("display","none");
+    $(".textBouton").css("margin-top","5px");
+    $(".textBouton").css("font-size","20px");
+    $(".boutons").css("height","20px");
+    $(".bouton").css("height","20px");
+
   });
 });
 

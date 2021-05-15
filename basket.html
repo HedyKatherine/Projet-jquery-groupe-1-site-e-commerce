@@ -1,55 +1,118 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html dir="ltr" lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>panier</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<title>Panier</title><!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-sm navbar-light">
-      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="index.html"><img alt="logo" class="logo" src="images/logo.png"></a>
       <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="product.html">Produits</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Accueil</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="product.html">Produits</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="d-flex justify-content-end">
+					<a href="basket.html"><img alt="panier" class="panier" src="images/panier.svg"></a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<!-- emilie -->
+		<section class="container-fluid">
+			<div class="content col-xs-12">
+				<div class="row">
+					<!-- <div class="col-sm-12">
+          <div class="rechercheCatalogueResponsive">
+          <h4>Rechercher dans le catalogue</h4>
+          <form id="rechercheCatalogue">
+          <input type="text" />
+          <input type="button" value="Rechercher" />
+        </form>
+        <p>Recherche avancée</p>
       </div>
-      <div class="row">
-        <div class="d-flex justify-content-end">
-          <a href="basket.html"><img src="images/panier.png"alt="panier" style="width:30%; height:auto"></a>
-        </div>
-      </div>
-    </nav>
-    <main>
-
-    </main>
-    <footer>
-      <div class="row">
-        <div class="col">
-          <a href="https://www.instagram.com/vantascostumes/?hl=fr" target="_blank"><img src="images/128x128instagram.png" alt="LogoInstagram" style="width:5%; height:auto"></a>
-          <a href="https://www.facebook.com/Vantacostumes" target="_blank"><img src="images/128x128facebook.png" alt="LogoFacebook" style="width:5%; height:auto"></a>
-        </div>
-      </div>
-      <div>
-        <p class="copyright">&copy K.Burgain, A.Martina, E.Molina, S.Vesin</p>
-      </div>
-    </footer>
-    <!-- les scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-  </body>
-  </html>
+    </div> -->
+				</div>
+				<div class="row">
+					<section class="colPrinc col-sm-9 col-xs-12">
+						<h1>Votre Panier</h1>
+						<div class="labelPanier row">
+							<div class="col-xs-6"></div>
+							<div class="col-xs-2">Prix</div>
+							<div class="col-xs-2">Quantité</div>
+							<div class="col-xs-2">Prix total Unitaire</div>
+						</div>
+						<div class="articlePanier row">
+							<div class="col-xs-3"><img src="#"></div>
+							<div class="col-xs-3">
+								<span></span>
+								<p>Supprimer</p>
+							</div>
+							<div class="col-xs-3"></div>
+							<div class="col-xs-3">
+								<!-- <input type="number" min="1" max="500" value="1" /> -->
+							</div>
+						</div>
+						<div class="articlePanier row">
+							<div class="col-xs-3"><img src="#"></div>
+							<div class="col-xs-3">
+								<span>Nom Article</span>
+								<p>Supprimer</p>
+							</div>
+						</div>
+						<div class="optionPanier">
+							<input class="MettreAJourPanier" type="button" value="Mettre à jour le panier">
+              <input id="SupprimerPanier" type="button" value="Supprimer le contenu du panier">
+						</div>
+					</section>
+				</div>
+			</div>
+      <!-- fin emilie -->
+		</section>
+	</main>
+	<section class="colDroite col-xs-3">
+		<div class="widgetPanier">
+			<h4>Votre panier</h4>
+			<div class="contentWidget"></div>
+		</div>
+	</section>
+	<footer>
+		<div class="row">
+			<div class="col">
+				<a href="https://www.instagram.com/vantascostumes/?hl=fr" target="_blank"><img alt="LogoInstagram" src="images/128x128instagram.png" style="width:5%; height:auto"></a> <a href="https://www.facebook.com/Vantacostumes" target="_blank"><img alt="LogoFacebook" src="images/128x128facebook.png" style="width:5%; height:auto"></a>
+			</div>
+		</div>
+		<div>
+			<p class="copyright">&#169;&#160;K.Burgain, A.Martina, E.Molina, S.Vesin</p>
+		</div>
+	</footer>
+  <!-- les scripts -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="main.js"></script>
+	<script src="script-article.js"></script>
+	<script src="script-panier.js"></script>
+<!-- <script>
+       $(document).ready(function () {
+         $(".widgetPanier .contentWidget").append(panier);
+           verifierConnecter();
+        });
+</script> -->
+</body>
+</html>
