@@ -44,7 +44,6 @@ h1, h2 {
 
 .nav-link {
   font-family: "amaranteregular", sans-serif;
-  font-size: 30px;
 }
 
 .nav-link:hover {
@@ -204,6 +203,12 @@ h2 {
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.contactTexte {
+  color: #000614;
+  font-family: "amaranteregular", sans-serif;
+  font-size: 22px;
 }
 
 .photoconcontact {

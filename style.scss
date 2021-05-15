@@ -63,7 +63,7 @@ background-color: #CCDBFD;
 .nav-link
 {
   font-family: $fontEmphasize, sans-serif;
-  font-size: 30px;
+
 }
 .nav-link:hover
 {
@@ -230,6 +230,12 @@ h2
   justify-content: center;
   margin-top: $mainPaddingTop;
   margin-bottom: 20px;
+}
+.contactTexte
+{
+  color: $mainColorTypo;
+  font-family: $fontEmphasize, sans-serif;
+  font-size: 22px;
 }
 .photoconcontact
 {
