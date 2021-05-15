@@ -2,37 +2,38 @@ $(document).ready(function(){
     //pour afficher colliers mi-longs
     $("#categorie1").click(function(){
         $(".collierMiLong").toggle();
-        $(".imageBouton").css("width","50px");
-        $(".imageBouton").css("height","50px");
-        $(".bouton").css("margin-top","15px");
-        $(".bouton").css("height","50px");
-
-
-        //$(".text").css("color","black");
-        //$(".text").css("background","#EDF2FB");
+        $(".imageBouton").css("display","none");
+        $(".textBouton").css("margin-top","5px");
+        $(".textBouton").css("font-size","20px");
+        $(".boutons").css("height","20px");
+        $(".bouton").css("height","20px");
     });
     $("#categorie2").click(function(){
         $(".sautoir").toggle();
-        $(".imageBouton").css("width","50px");
-        $(".imageBouton").css("height","50px");
-        $(".bouton").css("margin-top","15px");
-        $(".bouton").css("height","50px");
+        $(".imageBouton").css("display","none");
+        $(".textBouton").css("margin-top","5px");
+        $(".textBouton").css("font-size","20px");
+        $(".boutons").css("height","20px");
+        $(".bouton").css("height","20px");
     });
     $("#categorie3").click(function(){
-        $(".tourDeCou").toggle();
-        $(".imageBouton").css("width","50px");
-        $(".imageBouton").css("height","50px");
-        $(".bouton").css("margin-top","15px");
-        $(".bouton").css("height","50px");
+      $(".tourDeCou").toggle();
+      $(".imageBouton").css("display","none");
+      $(".textBouton").css("margin-top","5px");
+      $(".textBouton").css("font-size","20px");
+      $(".boutons").css("height","20px");
+      $(".bouton").css("height","20px");
     });
     $("#categorie4").click(function(){
         $(".bouclesOreilles").toggle();
-        $(".imageBouton").css("width","50px");
-        $(".imageBouton").css("height","50px");
-        $(".bouton").css("margin-top","15px");
-        $(".bouton").css("height","50px");
+        $(".imageBouton").css("display","none");
+        $(".textBouton").css("margin-top","5px");
+        $(".textBouton").css("font-size","20px");
+        $(".boutons").css("height","20px");
+        $(".bouton").css("height","20px");
+
     });
-});
+  });
 
 /////pour le mouseover sur les photos des cartes
 //carte1
