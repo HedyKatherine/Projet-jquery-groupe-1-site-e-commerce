@@ -29,72 +29,77 @@
                     <a href="basket.html"><img src="images/panier.svg" alt="panier" class="panier"></a>
                   </div>
               </div>
-            </nav>
-          </header>
-      <main class="container">
+        </nav>
+    </header>
+    <main class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="mb-3 contact">Contact</h1>
+        </div>
+        </div>
         <div class="row">
           <div class="col">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="intro mb-3">Vous avez une envie, une question?</br>N'hésitez pas à me contacter...</p>
           </div>
         </div>
+        <div class="row mt-3">
+          <div class="col-12 col-lg-7">
         <form action="https://formspree.io/f/mzbyeepp"method="POST">
-          <div class="col">
-            <label>Nom:<input type="name" name="lastName"></label>
+          <div class="row">
+              <div class="col-md-12 form-group">
+                <label class="label" for="firstname">Prénom</label>
+                <input class="form-control" type="text" name="firstName" placeholder="Prénom" required="required"/>
+              </div>
           </div>
-          <div class="col">
-            <label>Prénom:<input type="name" name="firstName"></label>
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <label class="label" for="name">Nom</label>
+              <input type="text" class="form-control" name="name" placeholder="Nom" required="required">
+            </div>
           </div>
-          <div class="col">
-            <label>Courriel:<input type="email" name="_replyto"></label>
+          <div class="row">
+            <div class="col-md-12 form-group ">
+              <label class="label" for="subject">Sujet</label>
+              <input type="text" class="form-control" name="subject" placeholder="Sujet" required="required">
+            </div>
           </div>
-          <div class="col">
-            <label>Message:<textarea name="message"></textarea></label>
+          <div class="row">
+              <div class="col-md-12 form-group">
+                <label class="label" for="replyto">Courriel</label>
+                <input class="form-control" type="email" name="_replyto" placeholder="Courriel" required="required">
+              </div>
           </div>
-          <button type="submit">envoyer</button>
-            </form>
-            <div class=" d-flex justify-content-center">
-            <div id="carouselContact" class="slide carousel" data-ride="carousel">
-             <!-- Carrousel -->
-                 <div class="carousel-inner" style="width:300px; height:400px">
-                   <div class="carousel-item active" data-interval="4500">
-                     <img src="images/caroussel1.jpg" alt="Carrousel slide 1" class="d-block imageCarousel" style="width:300px; height:400px">
-                   </div>
-                   <div class="carousel-item" data-interval="4500">
-                     <img src="images/caroussel2.jpg" alt="Carrousel slide 2" class="d-block imageCarousel" style="width:300px; height:400px">
-                   </div>
-                   <div class="carousel-item" data-interval="4500">
-                     <img src="images/caroussel3.jpg" alt="Carrousel slide 3" class="d-block imageCarousel" style="width:300px; height:400px">
-                   </div>
-                   <div class="carousel-item" data-interval="4500">
-                     <img src="images/caroussel4.jpg" alt="Carrousel slide 3" class="d-block imageCarousel" style="width:300px; height:400px">
-                   </div>
-                   <div class="carousel-item" data-interval="4500">
-                     <img src="images/caroussel5.jpg" alt="Carrousel slide 3" class="d-block imageCarousel"style="width:300px; height:400px">
-                   </div>
-                 </div>
-                 <!-- Contrôles -->
-                 <a class="carousel-control-prev" href="#carouselContact" role="button" data-slide="prev">
-                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                   <span class="sr-only">Précédent</span>
-                 </a>
-                 <a class="carousel-control-next" href="#carouselContact" role="button" data-slide="next">
-                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                   <span class="sr-only">Suivant</span>
-                 </a>
-               </div>
-             </div>
-          </main>
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <label class="label" for="message">Message</label>
+              <textarea name="message" class="form-control" cols="30" rows="4" placeholder="Message" required="required"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 form-group text-center">
+              <button class="btn" type="submit">Envoyer</button>
+            </div>
+          </div>
+        </form>
+        </div>
+        <div class="col-5">
+          <img src="images/Vanta.jpg" alt="photo Vanta's costumes" class="photocontact">
+        </div>
+        </div>
+      </main>
       <footer>
-        <div class="row">
-          <div class="col">
-            <a href="https://www.instagram.com/vantascostumes/?hl=fr" target="_blank"><img src="images/128x128instagram.png" alt="LogoInstagram" style="width:5%; height:auto"</a>
-            <a href="https://www.facebook.com/Vantacostumes" target="_blank"><img src="images/128x128facebook.png" alt="LogoFacebook" style="width:5%; height:auto"</a>
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col liens">
+                <a href="https://www.instagram.com/vantascostumes/?hl=fr" target="_blank"><img src="images/128x128instagram.png" alt="LogoInstagram" style="width:5%; height:auto"></a>
+                <a href="https://www.facebook.com/Vantacostumes" target="_blank"><img src="images/128x128facebook.png" alt="LogoFacebook" style="width:5%; height:auto"></a>
+              </div>
+            </div>
+            <div>
+              <p class="copyright">&copy K.Burgain, A.Martina, E.Molina, S.Vesin</p>
+            </div>
           </div>
-          </div>
-          <div>
-            <p class="copyright">&copy K.Burgain, A.Martina, E.Molina, S.Vesin</p>
-          </div>
-      </footer>
+        </footer>
         <!-- les scripts -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

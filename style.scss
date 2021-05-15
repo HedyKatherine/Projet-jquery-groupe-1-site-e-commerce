@@ -31,22 +31,20 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
 /////variables
 $mainColorTypo: #000614;
 $mainPaddingTop: 20px;
 $fontEmphasize : "amaranteregular";
-
-
-
-
 //////règles générales
 body
 {
 background-color: #EDF2FB;
 color: $mainColorTypo
 }
+
+h1,h2
+{font-family: $fontEmphasize,sans-serif;}
+
 //////////////////header///////
 .navbar
 {
@@ -62,6 +60,38 @@ background-color: #CCDBFD;
   width: 80%;
   height: 80px;
 }
+.nav-link
+{
+  font-family: $fontEmphasize, sans-serif;
+  font-size: 30px;
+}
+.nav-link:hover
+{
+background-color: rgba(0, 18, 61, 0.5);
+}
+/////////footer////
+footer
+{
+  margin-top: 40px;
+  height: 150px;
+  background-color: #CCDBFD;
+}
+@media screen and (max-width: 992px)
+{
+  footer
+  {
+    height: 100px;
+  }
+}
+.liens
+{
+  margin-top: $mainPaddingTop;
+}
+.copyright
+{
+  font-size: 10px;
+  font-style: italic;
+}
 
 /////page accueil//////
 .pageAccueil //div entourant texte intro et caroussel
@@ -71,8 +101,9 @@ background-color: #CCDBFD;
   margin-top: 20px;
   border-radius: 2%;
   box-shadow: 6px 6px 12px grey;
+  margin-bottom: 20px;
 }
-@media screen and (max-width: 767px)//papier collant pour que la div reste jolie en format mobile
+@media screen and (max-width: 992px)//papier collant pour que la div reste jolie en format mobile
 {.pageAccueil
   {
   height: 900px;
@@ -80,8 +111,9 @@ background-color: #CCDBFD;
 }
 .intro //classe texte intro de la page accueil
 {
-  font-size: 20px;
+  font-size: 25px;
   padding-left: 20px;
+  font-family: $fontEmphasize,sans-serif;
 }
 .carousel
 {
@@ -106,7 +138,6 @@ background-color: #CCDBFD;
   margin-top: $mainPaddingTop;
   display: flex;
   justify-content: center;
-  font-family: $fontEmphasize,sans-serif;
   color: #00123D;
 }
 .bordureDroite
@@ -175,17 +206,15 @@ margin-left: 45px;
   justify-content: center;
 }
 }
-img
+.imgProduit
 {
   width: 240px;
   height: 240px;
-
   margin-bottom: 10px;
 }
 h2
 {
   text-align: center;
-  font-family: $fontEmphasize,sans-serif;
   font-size: 22px;
   margin-top: 8px;
 }
@@ -194,5 +223,22 @@ h2
   font-family: $fontEmphasize, sans-serif;
   font-size: 20px;
   background-color: #B1C7FC;
-
+}
+/////pagecontact
+.contact{
+  display: flex;
+  justify-content: center;
+  margin-top: $mainPaddingTop;
+  margin-bottom: 20px;
+}
+.photoconcontact
+{
+  width: 200px;
+  height: 500px;
+}
+@media screen and (max-width: 999px)
+{.photocontact
+  {
+    display: none;
+  }
 }
