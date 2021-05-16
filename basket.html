@@ -108,11 +108,43 @@
 	<script src="main.js"></script>
 	<script src="script-article.js"></script>
 	<script src="script-panier.js"></script>
-<!-- <script>
-       $(document).ready(function () {
-         $(".widgetPanier .contentWidget").append(panier);
-           verifierConnecter();
-        });
-</script> -->
+  <!-- <script>
+    $(document).ready(function(){
+      $(".widgetPanier .contentWidget").append(panier);
+      // verifierConnecter ();
+      ajouterPagePanier();
+
+    $(".MettreAJourPanier").click(function() { MettreAJourPanier(); });
+    $("#SupprimerPanier").click(function() { SupprimerPanier (); });
+    $("body").on("click", ".btSupprimer", function(){
+
+    if($(this).parent().parent().hasClass("articlePanier")){
+
+		 var parentPrincipal = $(this).parent().parent();
+		 var caractereTot = parentPrincipal.attr("class").length;
+		 caractereTot = caractereTot - 6;
+		 var idArticlePanier = parentPrincipal.attr("class").substring(caractereTot);
+
+		 $("#" + idArticlePanier + "").remove();
+		 $(parentPrincipal).remove();
+		 localStorage.removeItem("panier");
+		 totalPanier();
+		 enregistrerPanier();
+		 ajouterPagePanier();
+
+  }else if($(this).parent().hasClass("contentPanier")){
+		 $(this).parent().remove();
+		 localStorage.removeItem("panier");
+		 totalPanier();
+		 enregistrerPanier();
+		 ajouterPagePanier();
+
+ }
+
+	   return false;
+});
+
+});
+  </script> -->
 </body>
 </html>
