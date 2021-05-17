@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>produits</title><!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="index.html"><img alt="logo" class="logo" src="images/logo.png"></a>
+      <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Accueil</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="product.html">Produits</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="d-flex justify-content-end">
+					<a href="basket.html"><img alt="panier" class="panier" src="images/panier.svg"></a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="container">
+		<h1 class="boutique"><span class="bordure">w</span>boutique<span class="bordureDroite">w</span></h1>
+		<div class="row boutons">
+			<div class="col-12 col-md-6 col-lg-3 bouton" id="categorie1" style="width:250px;">
+				<img alt="collier pampre de vigne" class="imageBouton" src="images/colliers.jpg">
+				<p class="textBouton">Colliers</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3 bouton" id="categorie2">
+				<img alt="sautoir" class="imageBouton" src="images/sautoirs.jpg">
+				<p class="textBouton">Sautoirs</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3 bouton" id="categorie3">
+				<img alt="tour de cou cabochon papillon violet" class="imageBouton" src="images/tourdecou.jpg">
+				<p class="textBouton">Tours de cou</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3 bouton" id="categorie4">
+				<img alt="boucles d'oreilles dragon" class="imageBouton" src="images/bouclesdoreilles.jpg">
+				<p class="textBouton">Boucles d'oreilles</p>
+			</div>
+		</div>
+    <!--carte 1-->
+		<div class="row produits">
+			<div class="card col-12 col-md-6 col-lg-3 collierMiLong" id="card1">
+				<h2>Collier Adenora</h2><img class="imgProduit" id="img1" onmouseout="departure1(this);" onmouseover="passage1(this);" src="images/14.jpg">
+				<p>Collier estampe métallique et cristal de Bohème</p>
+				<p>Métal couleur bronze, cristal de Bohème vert sapin et jais</p>
+				<p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+				<p>Longueur : environ 27cm</p>
+				<p>Prix : 20€</p>
+        <button class="btn" id="ajouterPanier" type="button" onclick="ajouterWidgetPanier(0)">Ajouter au panier</button>
+			</div>
+      <!-- carte 2 -->
+			<div class="card col-12 col-md-6 col-lg-3 bouclesOreilles" id="card2">
+				<h2>Boucles d'oreilles Dragon rouge</h2><img class="imgProduit" id="img2" onmouseout="departure2(this);" onmouseover="passage2(this);" src="images/34.jpg">
+				<p>Boucles d'oreilles à estampe métallique et cristal de Bohème</p>
+				<p>Métal couleur bronze, cristal de Bohème rouge et jais</p>
+				<p>Possibilité de monter les boucles d'oreilles sur clip</p>
+				<p>Longueur : environ 10cm</p>
+				<p>Prix : 8,50€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!--carte 3-->
+			<div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+				<h2>Boucles d'oreilles chat</h2><img class="imgProduit" id="img3" onmouseout="departure3(this);" onmouseover="passage3(this);" src="images/42.jpg">
+				<p>Boucles d'oreilles breloque et cristal de Bohème</p>
+				<p>Métal argenté, breloque en forme de clé, cristal de Bohème</p>
+				<p>Possibilité de monter les boucles d'oreilles sur clip</p>
+				<p>Longueur : environ 6cm</p>
+				<p>Prix : 6,50€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!--carte 4-->
+			<div class="card col-12 col-md-6 col-lg-3 collierMiLong">
+				<h2>Collier Automne</h2><img class="imgProduit" id="img4" onmouseout="departure4(this);" onmouseover="passage4(this);" src="images/17.jpg">
+				<p>Collier estampe métallique et cristal de Bohème</p>
+				<p>Métal couleur bronze, cristal de Bohème rouge, jaune et rose</p>
+				<p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+				<p>Longueur : environ 30cm</p>
+				<p>Prix : 27€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!-- carte 5 -->
+			<div class="card col-12 col-md-6 col-lg-3 tourDeCou">
+				<h2>Collier steampunk</h2><img class="imgProduit" id="img5" onmouseout="departure5(this);" onmouseover="passage5(this);" src="images/1.jpg">
+				<p>Ras du cou en velours pendentif cabochon verre et estampe métallique</p>
+				<p>Métal couleur bronze, velours brun, cabochon de verre</p>
+				<p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+				<p>Longueur : environ 20cm</p>
+				<p>Prix : 15€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!-- carte 6 -->
+			<div class="card col-12 col-md-6 col-lg-3 sautoir">
+				<h2>Collier Alvanna bronze</h2><img class="imgProduit" id="img6" onmouseout="departure6(this);" onmouseover="passage6(this);" src="images/c.jpg">
+				<p>Collier 2 en 1 double rang/sautoir en perles métalliques et cristal de Bohème</p>
+				<p>Métal couleur bronze, cristal de Bohème vert sapin et jais</p>
+				<p>Fermeture par fermoir à crochet</p>
+				<p>Longueur :<br>
+				- double rang : environ 34cm<br>
+				- sautoir : environ 50cm</p>
+				<p>Prix : 30€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!--carte 7 -->
+			<div class="card col-12 col-md-6 col-lg-3 sautoir">
+				<h2>Collier Alvanna argent</h2><img class="imgProduit" id="img7" onmouseout="departure7(this);" onmouseover="passage7(this);" src="images/g.jpg">
+				<p>Collier 2 en 1 double rang/sautoir en perles métalliques et cristal de Bohème</p>
+				<p>Métal couleur argent, cristal de Bohème vert</p>
+				<p>Fermeture par fermoir à crochet</p>
+				<p>Longueur :<br>
+				- double rang : environ 24cm<br>
+				- sautoir : environ 40cm</p>
+				<p>Prix : 30€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!--carte 8-->
+			<div class="card col-12 col-md-6 col-lg-3 tourDeCou">
+				<h2>Ras du cou Anaïk</h2><img class="imgProduit" id="img8" onmouseout="departure8(this);" onmouseover="passage8(this);" src="images/8.jpg">
+				<p>Ras du cou ruban de satin, cabochon de verre</p>
+				<p>Métal argenté, ruban de satin bleu, cabochon de verre</p>
+				<p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+				<p>Longueur: environ 30cm</p>
+				<p>Prix : 10€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!-- carte 9-->
+			<div class="card col-12 col-md-6 col-lg-3 tourDeCou">
+				<h2>Ras du cou Serdaigle</h2><img class="imgProduit" id="img9" onmouseout="departure9(this);" onmouseover="passage9(this);" src="images/51.jpg">
+				<p>Un tour de cou aux couleurs de la maison Serdaigle...</p>
+				<p>Velours bleu roi, estampe en métal argenté, cristal de Bohème</p>
+				<p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+				<p>Longueur : environ 30cm</p>
+				<p>Prix : 9€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!--cart 10-->
+			<div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+				<h2>Boucles d'oreilles Serdaigle</h2><img class="imgProduit" id="img10" onmouseout="departure10(this);" onmouseover="passage10(this);" src="images/46.jpg">
+				<p>Des boucles d'oreilles aux couleurs de la maison Serdaigle...</p>
+				<p>métal argenté, cristal de Bohème bleu</p>
+				<p>Possibilité de monter les boucles d'oreilles sur clip</p>
+				<p>Longueur : environ 5cm</p>
+				<p>Prix : 5,50€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!-- carte 11 -->
+			<div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+				<h2>Ras du cou Serpentard</h2><img class="imgProduit" id="img11" onmouseout="departure11(this);" onmouseover="passage11(this);" src="images/48.jpg">
+				<p>Un tour de cou aux couleurs de la maison Serpentard...</p>
+				<p>Velours vert, estampe en métal argenté, cristal de Bohème</p>
+				<p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+				<p>Longueur : environ 30cm</p>
+				<p>Prix : 9€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!-- carte 12-->
+			<div class="card col-12 col-md-6 col-lg-3 tourDeCou">
+				<h2>Boucles d'oreilles Serpentard</h2><img class="imgProduit" id="img12" onmouseout="departure12(this);" onmouseover="passage12(this);" src="images/54.jpg">
+				<p>Des boucles d'oreilles aux couleurs de la maison Serpentard.</p>
+				<p>métal argenté, cristal de Bohème vert</p>
+				<p>Possibilité de monter les boucles d'oreilles sur clip</p>
+				<p>Longueur : environ 5cm</p>
+				<p>Prix : 5,50€</p><button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!-- carte 13 -->
+			<div class="card col-12 col-md-6 col-lg-3 tourDeCou">
+				<h2>Ras du cou Poussoufle</h2><img class="imgProduit" id="img13" onmouseout="departure13(this);" onmouseover="passage13(this);" src="images/62.jpg">
+				<p>Un tour de cou aux couleurs de la maison Poufsouffle...</p>
+				<p>Velours noir, estampe en métal argenté, cristal de Bohème</p>
+				<p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+				<p>Longueur : environ 30cm</p>
+				<p>Prix : 9€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!-- carte 14-->
+			<div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+				<h2>Boucles d'oreilles Poussoufle</h2><img class="imgProduit" id="img14" onmouseout="departure14(this);" onmouseover="passage14(this);" src="images/44.jpg">
+				<p>Des boucles d'oreilles aux couleurs de la maison Poufsouffle...</p>
+				<p>métal de couleur bronze , cristal de Bohème jais</p>
+				<p>Possibilité de monter les boucles d'oreilles sur clip</p>
+				<p>Longueur : environ 5cm</p>
+				<p>Prix : 5,50€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!-- carte 15-->
+			<div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+				<h2>Ras du cou Griffondor</h2><img alt="boucles d'oreilles Griffondor" class="imgProduit" src="images/63.jpg">
+				<p>Un tour de cou aux couleurs de la maison Gryffondor...</p>
+				<p>Velours rouge, estampe en métal argenté, cristal de Bohème</p>
+				<p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+				<p>Longueur : environ 30cm</p>
+				<p>Prix : 9€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!-- carte 16-->
+			<div class="card col-12 col-md-6 col-lg-3 tourDeCou">
+				<h2>Boucles d'oreilles Griffondor</h2><img class="imgProduit" id="img16" onmouseout="departure16(this);" onmouseover="passage16(this);" src="images/57.jpg">
+				<p>Des boucles d'oreilles aux couleurs de la maison Gryffondor..</p>
+				<p>Possibilité de monter les boucles d'oreilles sur clip</p>
+				<p>Longueur : environ 5cm</p>
+				<p>Prix : 5,50€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!-- carte 17 -->
+			<div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+				<h2>Boucles d'oreilles Bahiga</h2><img class="imgProduit" id="img17" onmouseout="departure17(this);" onmouseover="passage17(this);" src="images/30.jpg">
+				<p>Boucles d'oreilles à estampe métallique et cristal de Bohème</p>
+				<p>métal couleur bronze, cristal de Bohème bleu canard, bleu ciel et jais</p>
+				<p>Possibilité de monter les boucles d'oreilles sur clip</p>
+				<p>Longueur : environ 7cm</p>
+				<p>Prix : 8,00€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!-- carte 18-->
+			<div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+				<h2>Boucles d'oreilles Bahiga</h2><img class="imgProduit" id="img18" onmouseout="departure18(this);" onmouseover="passage18(this);" src="images/26.jpg">
+				<p>Boucles d'oreilles à estampe métallique et cristal de Bohème</p>
+				<p>métal couleur bronze, cristal de Bohème bleu ciel et bleu roi</p>
+				<p>Possibilité de monter les boucles d'oreilles sur clip</p>
+				<p>Longueur : environ 8cm</p>
+				<p>Prix : 8€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!-- carte 19-->
+			<div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+				<h2>Boucles d'oreilles Aggrabah</h2><img class="imgProduit" id="img19" onmouseout="departure19(this);" onmouseover="passage19(this);" src="images/32.jpg">
+				<p>Boucles d'oreilles à estampe métallique et cristal de Bohème</p>
+				<p>métal couleur bronze, cristal de Bohème rouge et bleu roi</p>
+				<p>Possibilité de monter les boucles d'oreilles sur clip</p>
+				<p>Longueur : environ 12cm</p>
+				<p>Prix : 8,50€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!-- carte 20-->
+			<div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+				<h2>Boucles d'oreilles Louise</h2><img class="imgProduit" id="img20" onmouseout="departure20(this);" onmouseover="passage20(this);" src="images/38.jpg">
+				<p>Boucles d'oreilles en perles</p>
+				<p>Perles en acrylique blanches, métal doré</p>
+				<p>Possibilité de monter les boucles d'oreilles sur clip</p>
+				<p>Longueur : environ 7cm</p>
+				<p>Prix : 7,50€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!-- carte 21 -->
+			<div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+				<h2>Boucles d'oreilles Bailee</h2><img class="imgProduit" id="img21" onmouseout="departure21(this);" onmouseover="passage21(this);" src="images/40.jpg">
+				<p>Boucles d'oreilles à estampe métallique et cristal de Bohème</p>
+				<p>métal couleur bronze, cristal de Bohème vert sapin et vert clair</p>
+				<p>Possibilité de monter les boucles d'oreilles sur clip</p>
+				<p>Longueur : environ 8cm</p>
+				<p>Prix : 7€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!-- carte 22 -->
+			<div class="card col-12 col-md-6 col-lg-3 bouclesOreilles">
+				<h2>Boucles d'oreilles Báirbre</h2><img class="imgProduit" id="img22" onmouseout="departure22(this);" onmouseover="passage22(this);" src="images/28.jpg">
+				<p>Boucles d'oreilles à estampe métallique et cristal de Bohème</p>
+				<p>métal de couleur bronze, cristal de Bohème vert</p>
+				<p>Possibilité de monter les boucles d'oreilles sur clip</p>
+				<p>Longueur : environ 5cm</p>
+				<p>Prix : 8,00€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+      <!-- carte 23 -->
+			<div class="card col-12 col-md-6 col-lg-3 collierMiLong">
+				<h2>Collier octopus</h2><img class="imgProduit" id="img23" onmouseout="departure23(this);" onmouseover="passage23(this);" src="images/4.jpg">
+				<p>Collier Octopus</p>
+				<p>Collier métallique</p>
+				<p>métal et estampe couleur bronze</p>
+				<p>Fermeture par fermoir à mousqueton et chaînette de réglage</p>
+				<p>Longueur : environ 22cm</p>
+				<p>Prix : 15€</p>
+        <button class="btn" id="ajouterPanier" type="button">Ajouter au panier</button>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col liens">
+					<a href="https://www.instagram.com/vantascostumes/?hl=fr" target="_blank"><img alt="LogoInstagram" src="images/128x128instagram.png" style="width:5%; height:auto"></a> <a href="https://www.instagram.com/vantascostumes/?hl=fr" target="_blank"><img alt="LogoFacebook" src="images/128x128facebook.png" style="width:5%; height:auto"></a>
+				</div>
+			</div>
+			<div class="col">
+				<p class="copyright">&#169;&#160;K.Burgain, A.Martina, E.Molina, S.Vesin</p>
+			</div>
+		</div>
+	</footer>
+  <!-- les scripts -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="main.js"></script>
+  <!-- <script src="script-article.js"></script>
+  <script src="script-panier.js"></script> -->
+	<!-- <script>
+	  $(document).ready(function(){
+      $(".widgetPanier .contentWidget").append(panier);
+    });
+	</script> -->
+</body>
+</html>

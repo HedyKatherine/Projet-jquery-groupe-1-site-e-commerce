@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'gothic_extrase';
+    src: url('fonts/GothicExtraE/gothicextras_e-webfont.eot');
+    src: url('fonts/GothicExtraE/gothicextras_e-webfont.eot') format('embedded-opentype'),
+         url('fonts/GothicExtraE/gothicextras_e-webfont.woff2') format('woff2'),
+         url('fonts/GothicExtraE/gothicextras_e-webfont.woff') format('woff'),
+         url('fonts/GothicExtraE/gothicextras_e-webfont.ttf') format('truetype'),
+         url('fonts/GothicExtraE/gothicextras_e-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothicExtrasC';
+    src: url('fonts/gothicExtraCgothicextras_c-webfont.eot');
+    src: url('fonts/gothicExtraCgothicextras_c-webfont.eot') format('embedded-opentype'),
+         url('fonts/gothicExtraC/gothicextras_c-webfont.woff2') format('woff2'),
+         url('fonts/gothicExtraC/gothicextras_c-webfont.woff') format('woff'),
+         url('fonts/gothicExtraC/gothicextras_c-webfont.ttf') format('truetype'),
+         url('fonts/gothicExtraC/gothicextras_c-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'amaranteregular';
+    src: url('fonts/amarante/amarante.regular-webfont.eot');
+    src: url('fonts/amarante/amarante.regular-webfont.eot') format('embedded-opentype'),
+         url('fonts/amarante/amarante.regular-webfont.woff2') format('woff2'),
+         url('fonts/amarante/amarante.regular-webfont.woff') format('woff'),
+         url('fonts/amarante/amarante.regular-webfont.ttf') format('truetype'),
+         url('fonts/amarante/amarante.regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/////variables
+$mainColorTypo: #000614;
+$mainPaddingTop: 20px;
+$fontEmphasize : "amaranteregular";
+//////règles générales
+body
+{
+background-color: #EDF2FB;
+color: $mainColorTypo
+}
+
+h1,h2
+{font-family: $fontEmphasize,sans-serif;}
+
+//////////////////header///////
+.navbar
+{
+background-color: #CCDBFD;
+}
+.logo
+{
+  width: 180px;
+  height: 80px;
+}
+.panier
+{
+  width: 80%;
+  height: 80px;
+}
+.nav-link
+{
+  font-family: $fontEmphasize, sans-serif;
+
+}
+.nav-link:hover
+{
+background-color: rgba(0, 18, 61, 0.5);
+}
+/////////footer////
+footer
+{
+  margin-top: 40px;
+  height: 150px;
+  background-color: #CCDBFD;
+}
+@media screen and (max-width: 992px)
+{
+  footer
+  {
+    height: 100px;
+  }
+}
+.liens
+{
+  margin-top: $mainPaddingTop;
+}
+.copyright
+{
+  font-size: 10px;
+  font-style: italic;
+}
+
+/////page accueil//////
+.pageAccueil //div entourant texte intro et caroussel
+{
+  height: 800px;
+  background-color: rgb(155, 184, 253,0.5);
+  margin-top: 20px;
+  border-radius: 2%;
+  box-shadow: 6px 6px 12px grey;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 992px)//papier collant pour que la div reste jolie en format mobile
+{.pageAccueil
+  {
+  height: 900px;
+}
+}
+.intro //classe texte intro de la page accueil
+{
+  font-size: 25px;
+  padding-left: 20px;
+  font-family: $fontEmphasize,sans-serif;
+}
+.carousel
+{
+  margin-top: $mainPaddingTop;
+  border: solid;
+  border-color: #ABC4FF;
+  border-width: 2px;
+  border-radius: 2%;
+  box-shadow: 6px 6px 12px grey;
+}
+.barre //machin décoratif sous le carousel
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+  font-family: 'gothic_extrase';
+  font-size: 100px;
+}
+////////// page product///////
+.boutique
+{
+  margin-top: $mainPaddingTop;
+  display: flex;
+  justify-content: center;
+  color: #00123D;
+}
+.bordureDroite
+{
+font-family: 'gothicExtrasC';
+font-size: 80px;
+transform: rotate(90deg);
+margin-top: -26px;
+}
+.bordure
+{
+font-family: 'gothicExtrasC';
+font-size: 80px;
+margin-top: -30px;
+}
+.boutons
+{
+  margin-top: 60px;
+  margin-bottom: 170px;
+}
+.bouton
+{
+  margin-top: 20px;
+  width: 250px;
+  height: 400px;
+}
+.imageBouton
+{
+  width: 250px;
+  height: 400px;
+}
+.textBouton
+{
+display: flex;
+justify-content: center;
+vertical-align: center;
+text-align: center;
+background-color: rgba(0, 18, 61, 0.5);
+font-family: $fontEmphasize, sans-serif;
+font-size: 30px;
+color: white;
+width: 190px;
+margin-top: -200px;
+margin-left: 45px;
+}
+.textBouton:hover
+{
+  transform: scale(1.5);
+    width: 160px;
+}
+.card
+{
+  width: 800px;
+  height: 700px;
+  background-color: #DEE7F8;
+  margin-bottom: 5px;
+  border-radius: 2%;
+  display: flex;
+  display: none;
+}
+@media screen and (max-width: 767px)
+{.collierMiLong, .bouclesOreilles, .tourDeCou, .sautoir
+  {width: 480px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+}
+.imgProduit
+{
+  width: 240px;
+  height: 240px;
+  margin-bottom: 10px;
+}
+h2
+{
+  text-align: center;
+  font-size: 22px;
+  margin-top: 8px;
+}
+.btn
+{
+  font-family: $fontEmphasize, sans-serif;
+  font-size: 20px;
+  background-color: #B1C7FC;
+}
+/////pagecontact
+.contact{
+  display: flex;
+  justify-content: center;
+  margin-top: $mainPaddingTop;
+  margin-bottom: 20px;
+}
+.contactTexte
+{
+  color: $mainColorTypo;
+  font-family: $fontEmphasize, sans-serif;
+  font-size: 22px;
+}
+.photoconcontact
+{
+  width: 200px;
+  height: 500px;
+}
+@media screen and (max-width: 999px)
+{.photocontact
+  {
+    display: none;
+  }
+}
