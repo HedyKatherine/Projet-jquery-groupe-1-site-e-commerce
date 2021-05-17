@@ -12,10 +12,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index.html"><img alt="logo" class="logo" src="images/logo.png"></a>
-            <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <a class="navbar-brand" href="index.html"><img alt="logo" class="logo" src="images/logo.png"></a> <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -57,9 +54,15 @@
                         <h1>Votre Panier</h1>
                         <div class="labelPanier row">
                             <div class="col-xs-6"></div>
-                            <div class="col-xs-2">Prix</div>
-                            <div class="col-xs-2">Quantité</div>
-                            <div class="col-xs-2">Prix total Unitaire</div>
+                            <div class="col-xs-2">
+                                Prix
+                            </div>
+                            <div class="col-xs-2">
+                                Quantité
+                            </div>
+                            <div class="col-xs-2">
+                                Prix total Unitaire
+                            </div>
                         </div>
                         <div class="articlePanier row">
                             <div class="col-xs-3"><img src="#"></div>
@@ -80,8 +83,7 @@
                             </div>
                         </div>
                         <div class="optionPanier">
-                            <input class="MettreAJourPanier" type="button" value="Mettre à jour le panier">
-                            <input id="SupprimerPanier" type="button" value="Supprimer le contenu du panier">
+                            <input class="MettreAJourPanier" type="button" value="Mettre à jour le panier"> <input id="SupprimerPanier" type="button" value="Supprimer le contenu du panier">
                         </div>
                     </section>
                 </div>
@@ -107,9 +109,12 @@
         </div>
     </footer>
     <!-- les scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="main.js">
+    </script>
     <!-- <script src="script-article.js"></script> -->
     <!-- <script src="script-panier.js"></script> -->
     <!-- <script>
@@ -124,61 +129,59 @@
 
     if($(this).parent().parent().hasClass("articlePanier")){
 
-		 var parentPrincipal = $(this).parent().parent();
-		 var caractereTot = parentPrincipal.attr("class").length;
-		 caractereTot = caractereTot - 6;
-		 var idArticlePanier = parentPrincipal.attr("class").substring(caractereTot);
+         var parentPrincipal = $(this).parent().parent();
+         var caractereTot = parentPrincipal.attr("class").length;
+         caractereTot = caractereTot - 6;
+         var idArticlePanier = parentPrincipal.attr("class").substring(caractereTot);
 
-		 $("#" + idArticlePanier + "").remove();
-		 $(parentPrincipal).remove();
-		 localStorage.removeItem("panier");
-		 totalPanier();
-		 enregistrerPanier();
-		 ajouterPagePanier();
+         $("#" + idArticlePanier + "").remove();
+         $(parentPrincipal).remove();
+         localStorage.removeItem("panier");
+         totalPanier();
+         enregistrerPanier();
+         ajouterPagePanier();
 
   }else if($(this).parent().hasClass("contentPanier")){
-		 $(this).parent().remove();
-		 localStorage.removeItem("panier");
-		 totalPanier();
-		 enregistrerPanier();
-		 ajouterPagePanier();
+         $(this).parent().remove();
+         localStorage.removeItem("panier");
+         totalPanier();
+         enregistrerPanier();
+         ajouterPagePanier();
 
  }
 
-	   return false;
+       return false;
 });
 
 });
   </script> -->
-
-    <!-- -----------------------------------------emilie----------------------------------------------------------------------- -->
-	<!-- NON terminé
+    <!-- =========================================emilie======================================================================= -->
+    <!-- NON terminé
     var product= (function() { cart = []; function produit (nom,...){ this.name = name; this.id = id; this.img = img; this.price = price; this.category = category; } } $(function() { -->
     <!-- nom, id, img, prix, categorie -->
     <!-- const collier1 = newproduct("Collier Adenora", "card1", "images/14.jpg", 20, "colliers"); -->
     <!-- const collier2
-	const collier3
-	const saut1
-	const saut2
-	const tour1
-	const tour2
-	const tour3
-	const tour4
-	const tour5
-	const tour6
-	const boucl1
-	const boucl2
-	const boucl3
-	const boucl4
-	const boucl5
-	const boucl6
-	const boucl7
-	const boucl8
-	const boucl9
-	const boucl10
-	const boucl11
-	const boucl12 -->
-
+    const collier3
+    const saut1
+    const saut2
+    const tour1
+    const tour2
+    const tour3
+    const tour4
+    const tour5
+    const tour6
+    const boucl1
+    const boucl2
+    const boucl3
+    const boucl4
+    const boucl5
+    const boucl6
+    const boucl7
+    const boucl8
+    const boucl9
+    const boucl10
+    const boucl11
+    const boucl12 -->
     <!-- var productList = [collier1 ]; var counter = 0; -->
     <!-- liste du panier -->
     <!-- var basketProduct = []; -->
@@ -186,14 +189,9 @@
     <!-- if(localStorage.getItem("counter") != null){ basketProduct = JSON.parse(localStorage.getItem("basketProduct") } -->
     <!-- si on ajoute produit -->
     <!-- if(localStorage.getItem("counter") != null){ counter = localStorage.getItem("counter"); } $("#ajouterPanier").click(function(){ counter++; localStorage.setItem("counter", counter); $('#img1').text(counter); } -->
-
     <!-- ajouter au panier -->
     <!-- var addItem = $(this).attr('id') -->
-
     }
-
-
-
 </body>
 
 </html>
