@@ -16,7 +16,7 @@ if(nomArticleCourant === articleCourant){
 	quantiteArticle = parseInt(quantiteArticle);
 	$(".widgetPanier .contentWidget").append("<div id='" + articleCourant.id + "' class='contentPanier " + articleCourant.id + "'></div>");
 	$(".contentWidget .contentPanier." + articleCourant.id + "").append("<div class='btSupprimer'><a href='#'></a></div>");
-	$(".contentWidget .contentPanier." + articleCourant.id + "").append("<img src='images/articles/" + articleCourant.image + "-mini.jpg' alt='" + articleCourant.nom + "' />");
+	// $(".contentWidget .contentPanier." + articleCourant.id + "").append("<img src='images/articles/" + articleCourant.image + "-mini.jpg' alt='" + articleCourant.nom + "' />");
 	$(".contentWidget .contentPanier." + articleCourant.id + "").append("<p class='nomArticleWidget'>" + articleCourant.nom + "</p>");
 	$(".contentWidget .contentPanier." + articleCourant.id + "").append("<p class='prixArticleWidget'>EUR <span class='prixUnitaireWidget'>" + articleCourant.prix + "</span> x <span class='quantiteArticleWidget'>" + quantiteArticle + "</span></p>");
 	$(".contentWidget .contentPanier." + articleCourant.id + "").append("<p class='prixArticleTotalWidget'>Total article EUR <span>" + prixArticle + "</span></p>");
@@ -54,7 +54,7 @@ function enregistrerPanier() {
 
 function ajouterPagePanier() {
 	var articleDifferent = $(".widgetPanier .contentWidget .contentPanier");
-	var imageArticle = $(".widgetPanier .contentWidget .contentPanier img");
+	// var imageArticle = $(".widgetPanier .contentWidget .contentPanier img");
 	var nomArticle = $(".widgetPanier .contentWidget .contentPanier .nomArticleWidget");
 	var prixArticle = $(".widgetPanier .contentWidget .contentPanier .prixArticleWidget .prixUnitaireWidget");
 	var quantiteArticle = $(".widgetPanier .contentWidget .contentPanier .prixArticleWidget .quantiteArticleWidget");
@@ -66,16 +66,16 @@ function ajouterPagePanier() {
 	};
 	for (var i = 0; i < articleDifferent.length; i++) {
 		var idArticle = articleDifferent.eq(i).attr("id");
-		var imageCourante = imageArticle.eq(i);
+		// var imageCourante = imageArticle.eq(i);
 		var nomCourant = nomArticle.eq(i);
 		var prixCourant = prixArticle.eq(i);
 		var quantiteCourante = quantiteArticle.eq(i);
 		var prixTotalArticleCourant = prixTotalArticle.eq(i);
 		$(".labelPanier.row").after("<div class='articlePanier row " + idArticle + "'></div>");
-		$(".articlePanier." + idArticle + "").append("<div class='col-xs-3'><img src='" + imageCourante.attr('src') + "'</div>");
+		// $(".articlePanier." + idArticle + "").append("<div class='col-xs-3'><img src='" + imageCourante.attr('src') + "'</div>");
 		$(".articlePanier." + idArticle + "").append("<div class='col-xs-3'><p>" + nomCourant.text() + "</p><input class='btSupprimer' type='button' value='Supprimer' /></div>");
 		$(".articlePanier." + idArticle + "").append("<div class='col-xs-2'><p>EUR " + prixCourant.text() + "</p></div>");
-		$(".articlePanier." + idArticle + "").append("<div class='col-xs-2'><input type='number' min='1' max='500' value='" + quantiteCourante.text() + "' /></div>");
+		// $(".articlePanier." + idArticle + "").append("<div class='col-xs-2'><input type='number' min='1' max='500' value='" + quantiteCourante.text() + "' /></div>");
 		$(".articlePanier." + idArticle + "").append("<div class='col-xs-2'><p>EUR " + prixTotalArticleCourant.text() + "</p></div>");
 	};
 	if (articleDifferent.length === 0) {

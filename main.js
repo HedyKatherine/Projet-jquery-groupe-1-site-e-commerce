@@ -148,13 +148,15 @@ function passage17(element) {
 function departure17(element) {
   element.setAttribute('src', 'images/31.jpg');
 }
-//carte18
+/*
+// carte18 est un doublon de card 17
 function passage18(element) {
   element.setAttribute('src', 'images/26.jpg');
 }
 function departure18(element) {
   element.setAttribute('src', 'images/27.jpg');
 }
+*/
 //carte19
 function passage19(element) {
   element.setAttribute('src', 'images/32.jpg');
